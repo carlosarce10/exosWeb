@@ -1,7 +1,7 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout class="">
     <q-header>
-      <q-toolbar class="q-pt-xl bg-white">
+      <q-toolbar class="q-pt-xl q-pb-xl bg-white">
         <img
           class="q-ml-xl"
           src="../assets/logo.png"
@@ -10,10 +10,10 @@
         <q-space />
         <q-tabs shrink>
           <q-tab class="letras" name="tab1" label="Nosotros"></q-tab>
-          <q-tab class="letras" name="tab1" label="Experiencia"></q-tab>
-          <q-tab class="letras" name="tab1" label="Producto"></q-tab>
-          <q-tab class="letras" name="tab1" label="Servicios"></q-tab>
-          <q-tab class="letras" name="tab1" label="Contacto"></q-tab>
+          <q-tab class="letras" name="tab2" label="Experiencia"></q-tab>
+          <q-tab class="letras" name="tab3" label="Producto"></q-tab>
+          <q-tab class="letras" name="tab4" label="Servicios"></q-tab>
+          <q-tab class="letras" name="tab5" label="Contacto"></q-tab>
         </q-tabs>
       </q-toolbar>
     </q-header>

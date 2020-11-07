@@ -1,13 +1,18 @@
 <template>
-  <q-page class="flex flex-center">
-    <div class="q-pa-md">
-      <h1>holas</h1>
-    </div>
-  </q-page>
+  <div>
+    <q-carousel animated v-model="slide" navigation infinite class="carrusel">
+      <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
+    </q-carousel>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "PageIndex"
+  name: "PageIndex",
+  data() {
+    return {
+      slide: 1
+    };
+  }
 };
 </script>
