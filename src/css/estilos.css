@@ -10,28 +10,40 @@ h3 {
   line-height: 0.2;
 }
 
-#nosotros {
+.nosotros {
   padding: 60px 0 40px 0;
   position: relative;
 }
 
-#nosotros p {
+.nosotros p {
   position: relative;
   z-index: 10;
   font-size: 18px;
 }
 
-#clientes {
+.clientes {
   background-color: #e3e3e3;
 }
 
-#clientes h4 {
+.clientes h4 {
   text-align: center;
 }
 
-#clientes img {
+.clientes img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.imgExp {
+  background-image: url(../assets/exp.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.imgExp div {
+  margin-top: 6%;
+  margin-left: 15%;
+  color: white;
 }
