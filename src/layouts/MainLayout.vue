@@ -17,6 +17,7 @@
         </q-tabs>
       </q-toolbar>
     </q-header>
+    <router-view></router-view>
   </q-layout>
 </template>
 <script>
