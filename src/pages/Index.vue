@@ -26,6 +26,12 @@
      </div>
       
     </div>
+    <div class="row" id="clientes">
+      <div class="col-12 col-md-12">
+        <h4>Nuestros clientes</h4>
+        <img src="../assets/clientes.png" alt="">
+      </div>
+    </div>
 </div>
 </template>
 

@@ -20,3 +20,18 @@ h3 {
   z-index: 10;
   font-size: 18px;
 }
+
+#clientes {
+  background-color: #e3e3e3;
+}
+
+#clientes h4 {
+  text-align: center;
+}
+
+#clientes img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
