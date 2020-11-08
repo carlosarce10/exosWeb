@@ -3,7 +3,7 @@
   font-weight: bold !important;
 }
 .carrusel {
-  height: 750px;
+  height: 100vh;
 }
 
 h3 {
@@ -46,4 +46,25 @@ h3 {
   margin-top: 6%;
   margin-left: 15%;
   color: white;
+}
+
+.experiencias {
+  height: 100vh;
+  background-color: #e3e3e3;
+  text-align: center;
+}
+
+.exp p {
+  text-align: justify;
+  font-size: x-large;
+}
+
+.expLista {
+  margin-left: 2%;
+  text-align: justify;
+  font-size: medium;
+}
+
+.titulo {
+  text-align: left;
 }

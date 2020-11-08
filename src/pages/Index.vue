@@ -1,11 +1,16 @@
 <template>
   <div>
+    <!--SLIDER-->
     <div>
       <q-carousel animated v-model="slide" navigation infinite class="carrusel">
         <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
+        <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
+        <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />
+        <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
       </q-carousel>
     </div>
 
+    <!--ACERCA DE NOSOTROS-->
     <div class="row nosotros">
       <div class="col-12 col-md-4 offset-md-2">
         <h3>Acerca</h3>
@@ -33,12 +38,16 @@
         <p>Relaciones entre participantes en el mercado mexicano</p>
       </div>
     </div>
+
+    <!--NUESTROS CLIENTES-->
     <div class="row clientes q-pb-xl">
       <div class="col-12 col-md-12">
         <h4>Nuestros clientes</h4>
         <img src="../assets/clientes.png" alt="" />
       </div>
     </div>
+
+    <!-- AREAS DE EXPERIENCIA-->
     <div class="row imgExp">
       <div class="col-10 col-4-md">
         <h3>Áreas de</h3>
@@ -55,6 +64,99 @@
         </li>
         <li>Cuota de intercambio</li>
         <li>Minería de datos y análisis transaccional</li>
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <!-- EXPERIENCIAS DIGITALES-->
+    <div class="row clientes q-pb-xl">
+      <div class="col-12 col-md-12 experiencias">
+        <h4>Experiencias digitales e interactivas (UX/UI)</h4>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <q-card flat bordered class="my-card">
+              <q-card-section>
+                <div class="text-h2 titulo">
+                  Diseño de <br />
+                  experiencias
+                </div>
+              </q-card-section>
+
+              <q-card-section class="q-pt-none exp">
+                <p>
+                  <b>
+                    Evaluamos y analizamos las plataformas <br />
+                    para asegurar una experiencia de <br />
+                    navegación y funcionalidad centrada <br />
+                    100% en las necesidades de los usuarios y <br />
+                    la optimización de operaciones.
+                  </b>
+                </p>
+              </q-card-section>
+              <div class="expLista">
+                <li>
+                  <strong>Creación de plataformas</strong> amigables, <br />
+                  modernas y disruptivas
+                </li>
+                <li>
+                  <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
+                  SCRUM, Blue Ocean, Waterfall, UML, y más.
+                </li>
+                <li>
+                  <strong>Análisis</strong> profundo sobre la competencia. el
+                  <br />
+                  mercado y los usuarios.
+                </li>
+                <li>
+                  <strong>Establecimiento de directrices</strong> para
+                  interfaces <br />
+                  gráficas.
+                </li>
+              </div>
+              <q-card-section> </q-card-section>
+            </q-card>
+          </div>
+          <div class="col-12 col-md-6">
+            <q-card flat bordered class="my-card">
+              <q-card-section>
+                <div class="text-h2 titulo">
+                  Diseño de <br />
+                  interfaces
+                </div>
+              </q-card-section>
+              <q-card-section class="q-pt-none exp">
+                <p>
+                  <b>
+                    Creamos e implementamos pantallas que <br />
+                    reflejan la identidad visual de la marca, las <br />
+                    tendencias del mercado y un diseño <br />
+                    visualmente atractivo.
+                  </b>
+                </p>
+              </q-card-section>
+              <div class="expLista">
+                <li>
+                  Análisis y documentación de tendencias<br />
+                  actuales
+                </li>
+                <li>
+                  Propuestas responsivas y personalizadas <del></del><br />
+                  retículas
+                </li>
+                <li>
+                  Prototipos de navegación funcional
+                </li>
+                <li>
+                  Integración de pantallas a través de <br />
+                  herramientas como Bootstrap, Semantic UI, y <br />
+                  Materialize
+                </li>
+              </div>
+              <q-card-section> </q-card-section>
+            </q-card>
+          </div>
+        </div>
       </div>
     </div>
   </div>
