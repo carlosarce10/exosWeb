@@ -74,7 +74,7 @@
       <div class="col-12 col-md-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 card">
             <q-card flat bordered class="my-card">
               <q-card-section>
                 <div class="text-h2 titulo">
@@ -82,7 +82,6 @@
                   experiencias
                 </div>
               </q-card-section>
-
               <q-card-section class="q-pt-none exp">
                 <p>
                   <b>
@@ -117,7 +116,7 @@
               <q-card-section> </q-card-section>
             </q-card>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 card">
             <q-card flat bordered class="my-card">
               <q-card-section>
                 <div class="text-h2 titulo">
@@ -158,6 +157,50 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!--NUESTROS PRODUCTOS-->
+    <div class="row productos">
+      <h4>Nuestros productos</h4>
+    </div>
+    <div class=" slider">
+      <div class="q-pa-md nuestros">
+        <q-carousel
+          animated
+          v-model="slide"
+          navigation
+          infinite
+          control-color="black"
+          class="carrusel"
+        >
+          <q-carousel-slide
+            :name="1"
+            img-src="../assets/PREAUTORIZADOR.png"
+            class="img"
+          />
+          <q-carousel-slide
+            :name="2"
+            img-src="../assets/SISTEMA.png"
+            class="img"
+          />
+          <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
+          <q-carousel-slide
+            :name="4"
+            img-src="../assets/SHIFT.png"
+            class="img"
+          />
+          <q-carousel-slide
+            :name="5"
+            img-src="../assets/VISION.png"
+            class="img"
+          />
+        </q-carousel>
+      </div>
+    </div>
+
+    <!--NUESTROS SERVICIOS-->
+    <div class="row productos">
+      <h4>Nuestros servicios</h4>
     </div>
   </div>
 </template>
