@@ -72,9 +72,11 @@
     <!-- EXPERIENCIAS DIGITALES-->
     <div class="row clientes q-pb-xl">
       <div class="col-12 col-md-12 experiencias">
-        <h4>Experiencias digitales e interactivas (UX/UI)</h4>
-        <div class="row">
-          <div class="col-12 col-md-6 card">
+        <div class="col-12 col-md-12">
+          <h4>Experiencias digitales e interactivas (UX/UI)</h4>
+        </div>
+        <div class="row cartas">
+          <div class="col-12 col-md-6 offset-md">
             <q-card flat bordered class="my-card">
               <q-card-section>
                 <div class="text-h2 titulo">
@@ -171,7 +173,7 @@
           navigation
           infinite
           control-color="black"
-          class="carrusel"
+          class="carrusel2"
         >
           <q-carousel-slide
             :name="1"
@@ -201,6 +203,66 @@
     <!--NUESTROS SERVICIOS-->
     <div class="row productos">
       <h4>Nuestros servicios</h4>
+    </div>
+    <div class="container servicios">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-12 col-md-3 offset-md-2">
+              <div class="nav" aria-orientation="vertical">
+                <a href="">Consultoría</a>
+                <a href="">Desarrollos</a>
+                <a href="">Integración</a>
+                <a href="">Back Office</a>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-12 col-md-6">
+              <div>
+                <p>
+                  Amplia experiencia en medios de pago y soluciones
+                  tecnológicas, <br />
+                  operativas y de negocio para la incorporación al mercado
+                  mexicano e <br />
+                  internacional. Ofrecemos productos y soluciones acordes a los
+                  <br />
+                  estándares y necesidades apoyados por análisis de Normativas,
+                  <br />
+                  auditorías PCI, recomendaciones para adecuación de procesos
+                  con las <br />
+                  marcas (VISA, MASTERCARD, AMEX). <br /><br />
+
+                  Contamos con expertos que cuentan con más de
+                  <strong
+                    >25 años de <br />
+                    experiencia en la industria</strong
+                  >
+                  de medios de pago. Es por eso que el <br />
+                  enfoque en eXos está orientado a satisfacer las necesidades
+                  logísticas, <br />
+                  funcionales y tecnológicas del ámbito de medios de pago.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--PRODUCTOS-->
+    <div class="row necesidades">
+      <h4>
+        Productos que se adaptan a las <br />
+        necesidades de cada usuario
+      </h4>
+    </div>
+    <div class="row unete">
+      <img src="../assets/UNETE.png" alt="" />
+    </div>
+
+    <!--CONTACTO-->
+    <div class="row contacto">
+      <img src="../assets/CONTACTO.png" alt="" srcset="" />
     </div>
   </div>
 </template>
