@@ -11,7 +11,7 @@
     </div>
 
     <!--ACERCA DE NOSOTROS-->
-    <div class="row nosotros">
+    <div class="row nosotros" id="nosotros">
       <div class="col-12 col-md-4 offset-md-2">
         <h3>Acerca</h3>
         <h3>de nosotros</h3>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- AREAS DE EXPERIENCIA-->
-    <div class="row imgExp">
+    <div class="row imgExp" id="experiencia">
       <div class="col-10 col-4-md" style="margin-top: 7%">
         <h3>Áreas de</h3>
         <h3>experiencia</h3>
@@ -161,21 +161,18 @@
     </div>
 
     <!--NUESTROS PRODUCTOS-->
-    <div class="row productos">
+    <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
     <div class="slider">
-      <div class="q-pt-xl">
+      <div class="q-pt-xl q-pb-xl">
         <q-option-group
-          v-model="navPos"
-          :options="navigationPositions"
           color="purple"
           inline
           class="q-mb-md"
         />
         <q-carousel
           animated
-          :navigation-position="navPos"
           v-model="slide"
           infinite
           control-color="black"
@@ -208,7 +205,7 @@
     </div>
 
     <!--NUESTROS SERVICIOS-->
-    <div class="row productos">
+    <div class="row productos" id="servicios">
       <h4>Nuestros servicios</h4>
     </div>
     <div class="container servicios">
@@ -268,7 +265,7 @@
     </div>
 
     <!--CONTACTO-->
-    <div class="row contacto">
+    <div class="row contacto" id="contacto">
       <img src="../assets/CONTACTO.png" alt="" srcset="" />
     </div>
   </div>
@@ -276,19 +273,11 @@
 
 <script>
 import "../css/estilos.css";
-import "../js/app.js";
 export default {
   name: "PageIndex",
   data() {
     return {
       slide: 1,
-      navPos: "bottom",
-      navigationPositions: [
-        { value: "top", label: "top" },
-        { value: "right", label: "right" },
-        { value: "bottom", label: "bottom (default)" },
-        { value: "left", label: "left" },
-      ],
     };
   },
 };
