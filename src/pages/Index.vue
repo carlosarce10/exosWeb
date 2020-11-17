@@ -40,7 +40,7 @@
     </div>
 
     <!--NUESTROS CLIENTES-->
-    <div class="row clientes q-pb-xl">
+    <div class="row clientes q-pb-xl" id="#clientes">
       <div class="col-12 col-md-12">
         <h4>Nuestros clientes</h4>
         <img src="../assets/clientes.png" alt="" />
@@ -275,6 +275,8 @@
 </template>
 
 <script>
+import "../css/estilos.css";
+import "../js/app.js";
 export default {
   name: "PageIndex",
   data() {
