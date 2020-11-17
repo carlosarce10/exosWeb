@@ -49,14 +49,14 @@
 
     <!-- AREAS DE EXPERIENCIA-->
     <div class="row imgExp">
-      <div class="col-10 col-4-md">
+      <div class="col-10 col-4-md" style="margin-top: 7%">
         <h3>Áreas de</h3>
         <h3>experiencia</h3>
       </div>
-      <div class="col-10 col-4-md">
+      <div class="col-10 col-4-md" style="margin-top: 6%">
         <h3>Somos expertos</h3>
       </div>
-      <div>
+      <div class="q-mt-md q-mb-xl expAreas">
         <li>Integración a la banca mexicana para emisores / adquirentes</li>
         <li>Reglamentación local / ABM / Banxico</li>
         <li>
@@ -72,91 +72,90 @@
     <!-- EXPERIENCIAS DIGITALES-->
     <div class="row clientes q-pb-xl">
       <div class="col-12 col-md-12 experiencias">
-        <div class="col-12 col-md-12">
-          <h4>Experiencias digitales e interactivas (UX/UI)</h4>
-        </div>
-        <div class="row cartas">
-          <div class="col-12 col-md-6 offset-md">
-            <q-card flat bordered class="my-card">
-              <q-card-section>
-                <div class="text-h2 titulo">
-                  Diseño de <br />
-                  experiencias
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pt-none exp">
-                <p>
-                  <b>
-                    Evaluamos y analizamos las plataformas <br />
-                    para asegurar una experiencia de <br />
-                    navegación y funcionalidad centrada <br />
-                    100% en las necesidades de los usuarios y <br />
-                    la optimización de operaciones.
-                  </b>
-                </p>
-              </q-card-section>
+        <h4>Experiencias digitales e interactivas (UX/UI)</h4>
+      </div>
+      <div class="row">
+        <div class="col-7 col-4-sm offset-md-2">
+          <q-card flat bordered class="my-card">
+            <q-card-section class="q-ml-md">
+              <div class="text-h2 titulo q-mt-xl">
+                Diseño de <br />
+                experiencias
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pt-none exp q-ml-md">
+              <p>
+                <b>
+                  Evaluamos y analizamos las plataformas <br />
+                  para asegurar una experiencia de <br />
+                  navegación y funcionalidad centrada <br />
+                  100% en las necesidades de los usuarios y <br />
+                  la optimización de operaciones.
+                </b>
+              </p>
+            </q-card-section>
+            <q-card-section class="q-mb-md">
               <div class="expLista">
-                <li>
+                <li class="q-ml-md">
                   <strong>Creación de plataformas</strong> amigables, <br />
                   modernas y disruptivas
                 </li>
-                <li>
+                <li class="q-ml-md">
                   <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
                   SCRUM, Blue Ocean, Waterfall, UML, y más.
                 </li>
-                <li>
+                <li class="q-ml-md">
                   <strong>Análisis</strong> profundo sobre la competencia. el
                   <br />
                   mercado y los usuarios.
                 </li>
-                <li>
+                <li class="q-ml-md">
                   <strong>Establecimiento de directrices</strong> para
-                  interfaces <br />
+                  interfaces
+                  <br />
                   gráficas.
                 </li>
               </div>
-              <q-card-section> </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-12 col-md-6 card">
-            <q-card flat bordered class="my-card">
-              <q-card-section>
-                <div class="text-h2 titulo">
-                  Diseño de <br />
-                  interfaces
-                </div>
-              </q-card-section>
-              <q-card-section class="q-pt-none exp">
-                <p>
-                  <b>
-                    Creamos e implementamos pantallas que <br />
-                    reflejan la identidad visual de la marca, las <br />
-                    tendencias del mercado y un diseño <br />
-                    visualmente atractivo.
-                  </b>
-                </p>
-              </q-card-section>
-              <div class="expLista">
-                <li>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-3 col-4-sm">
+          <q-card flat bordered class="my-card">
+            <q-card-section class="q-ml-md">
+              <div class="text-h2 titulo q-mt-xl">
+                Diseño de <br />
+                interfaces
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pt-none exp q-ml-md">
+              <p>
+                <b>
+                  Creamos e implementamos pantallas que <br />
+                  reflejan la identidad visual de la marca, las <br />
+                  tendencias del mercado y un diseño <br />
+                  visualmente atractivo.
+                </b>
+              </p>
+            </q-card-section>
+            <q-card-section class="q-mb-md q-mt-md">
+              <div class="expLista q-mt-xl">
+                <li class="q-ml-md">
                   Análisis y documentación de tendencias<br />
                   actuales
                 </li>
-                <li>
+                <li class="q-ml-md">
                   Propuestas responsivas y personalizadas <del></del><br />
                   retículas
                 </li>
-                <li>
-                  Prototipos de navegación funcional
-                </li>
-                <li>
+                <li class="q-ml-md">Prototipos de navegación funcional</li>
+                <li class="q-ml-md">
                   Integración de pantallas a través de <br />
                   herramientas como Bootstrap, Semantic UI, y <br />
                   Materialize
                 </li>
               </div>
-              <q-card-section> </q-card-section>
-            </q-card>
-          </div>
+            </q-card-section>
+          </q-card>
         </div>
       </div>
     </div>
@@ -165,36 +164,44 @@
     <div class="row productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class=" slider">
-      <div class="q-pa-md nuestros">
+    <div class="slider">
+      <div class="q-pt-xl">
+        <q-option-group
+          v-model="navPos"
+          :options="navigationPositions"
+          color="purple"
+          inline
+          class="q-mb-md"
+        />
         <q-carousel
           animated
+          :navigation-position="navPos"
           v-model="slide"
-          navigation
           infinite
           control-color="black"
           class="carrusel2"
+          navigation
         >
           <q-carousel-slide
             :name="1"
             img-src="../assets/PREAUTORIZADOR.png"
-            class="img"
+            class="carrusel2-img"
           />
           <q-carousel-slide
             :name="2"
             img-src="../assets/SISTEMA.png"
-            class="img"
+            class="carrusel2-img"
           />
           <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
           <q-carousel-slide
             :name="4"
             img-src="../assets/SHIFT.png"
-            class="img"
+            class="carrusel2-img"
           />
           <q-carousel-slide
             :name="5"
             img-src="../assets/VISION.png"
-            class="img"
+            class="carrusel2-img"
           />
         </q-carousel>
       </div>
@@ -272,8 +279,15 @@ export default {
   name: "PageIndex",
   data() {
     return {
-      slide: 1
+      slide: 1,
+      navPos: "bottom",
+      navigationPositions: [
+        { value: "top", label: "top" },
+        { value: "right", label: "right" },
+        { value: "bottom", label: "bottom (default)" },
+        { value: "left", label: "left" },
+      ],
     };
-  }
+  },
 };
 </script>
