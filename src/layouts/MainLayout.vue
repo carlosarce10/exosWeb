@@ -10,11 +10,11 @@
         <q-space />
         <div class="nav-links">
           <q-tabs shrink>
-            <q-tab class="letras" name="tab1" label="Nosotros"></q-tab>
-            <q-tab class="letras" name="tab2" label="Experiencia"></q-tab>
-            <q-tab class="letras" name="tab3" label="Producto"></q-tab>
-            <q-tab class="letras" name="tab4" label="Servicios"></q-tab>
-            <q-tab class="letras" name="tab5" label="Contacto"></q-tab>
+            <q-tab v-scroll-to="'#nosotros'" class="letras" name="tab1" label="Nosotros"></q-tab>
+            <q-tab v-scroll-to="'#experiencia'" class="letras" name="tab2" label="Experiencia"></q-tab>
+            <q-tab v-scroll-to="'#productos'" class="letras" name="tab3" label="Producto"></q-tab>
+            <q-tab v-scroll-to="'#servicios'" class="letras" name="tab4" label="Servicios"></q-tab>
+            <q-tab v-scroll-to="'#contacto'" class="letras" name="tab5" label="Contacto"></q-tab>
           </q-tabs>
         </div>
       </q-toolbar>
@@ -24,10 +24,14 @@
 </template>
 <script>
 import "../css/estilos.css";
+import vueScrollto from 'vue-scrollto'
+import Vue from 'vue'
+Vue.use(vueScrollto)
+
 export default {
   name: "MainLayout",
   data() {
     return {};
-  }
+  },
 };
 </script>

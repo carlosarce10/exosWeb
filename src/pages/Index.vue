@@ -11,7 +11,7 @@
     </div>
 
     <!--ACERCA DE NOSOTROS-->
-    <div class="row nosotros">
+    <div class="row nosotros" id="nosotros">
       <div class="col-12 col-md-4 offset-md-2">
         <h3>Acerca</h3>
         <h3>de nosotros</h3>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- AREAS DE EXPERIENCIA-->
-    <div class="row imgExp">
+    <div class="row imgExp" id="experiencia">
       <div class="col-10 col-4-md" style="margin-top: 7%">
         <h3>Áreas de</h3>
         <h3>experiencia</h3>
@@ -161,21 +161,18 @@
     </div>
 
     <!--NUESTROS PRODUCTOS-->
-    <div class="row productos">
+    <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
     <div class="slider">
-      <div class="q-pt-xl">
+      <div class="q-pt-xl q-pb-xl">
         <q-option-group
-          v-model="navPos"
-          :options="navigationPositions"
           color="purple"
           inline
           class="q-mb-md"
         />
         <q-carousel
           animated
-          :navigation-position="navPos"
           v-model="slide"
           infinite
           control-color="black"
@@ -208,54 +205,95 @@
     </div>
 
     <!--NUESTROS SERVICIOS-->
-    <div class="row productos">
+    <div class="row productos" id="servicios">
       <h4>Nuestros servicios</h4>
     </div>
-    <div class="container servicios">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-12 col-md-3 offset-md-2">
-              <div class="nav" aria-orientation="vertical">
-                <a href="">Consultoría</a>
-                <a href="">Desarrollos</a>
-                <a href="">Integración</a>
-                <a href="">Back Office</a>
-              </div>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-12 col-md-6">
-              <div>
-                <p>
-                  Amplia experiencia en medios de pago y soluciones
-                  tecnológicas, <br />
-                  operativas y de negocio para la incorporación al mercado
-                  mexicano e <br />
-                  internacional. Ofrecemos productos y soluciones acordes a los
-                  <br />
-                  estándares y necesidades apoyados por análisis de Normativas,
-                  <br />
-                  auditorías PCI, recomendaciones para adecuación de procesos
-                  con las <br />
-                  marcas (VISA, MASTERCARD, AMEX). <br /><br />
+    <div class="q-pa-md servicios">
+      <div class="q-gutter-y-md">
+        <q-splitter
+          v-model="splitterModel"
+        >
+          <template v-slot:before>
+            <q-tabs
+              v-model="tab"
+              vertical
+              class="text-dark"
+            >
+              <q-tab name="consultoria"  label="Consultoría" />
+              <q-tab name="desarrollos" label="Desarrollos" />
+              <q-tab name="integracion" label="Integración" />
+              <q-tab name="backoffice" label="Back Office" />
+            </q-tabs>
+          </template>
 
-                  Contamos con expertos que cuentan con más de
-                  <strong
-                    >25 años de <br />
-                    experiencia en la industria</strong
-                  >
-                  de medios de pago. Es por eso que el <br />
-                  enfoque en eXos está orientado a satisfacer las necesidades
-                  logísticas, <br />
-                  funcionales y tecnológicas del ámbito de medios de pago.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <template v-slot:after>
+            <q-tab-panels
+              v-model="tab"
+              animated
+              swipeable
+              vertical
+              transition-prev="jump-down"
+              transition-next="jump-up"
+            >
+              <q-tab-panel name="consultoria">
+                <p>Amplia experiencia en medios de pago y soluciones tecnológicas,</p>
+                <p>operativas y de negocio para la incorporación al mercado mexicano e</p>
+                <p>internacional. Ofrecemos productos y soluciones acordes a los</p>
+                <p>estándares y necesidades apoyados por análisis de Normativas,</p>
+                <p>auditorías PCI, recomendaciones para adecuación de procesos con las</p>
+                <p>marcas (VISA, MASTERCARD, AMEX).</p>
+                
+                <p>Contamos con expertos que cuenta con más de <strong>25 años de</strong></p>
+                <p><strong>experiencia en la industria</strong> de medios de pago. Es por eso que el</p>
+                <p>enfoque en eXos está orientado a satisfacer las necesidades logísticas,</p>
+                <p>funcionales y tecnológicas del ámbito de medios de pago.</p>
+              </q-tab-panel>
+
+              <q-tab-panel name="desarrollos">
+                <p>Somos expertos en Proyectos de Desarrollo de Software basados en</p>
+                <p>las especificaciones de nuestros clientes, y gracias a nuestra</p>
+                <p>experiencia acumulada desde hace mas de 25 años en la industria de</p>
+                <p>medios de pago entregamos al cliente Software, sin defectos,</p>
+                <p>proyectos a tiempo y la mejor relación de costo-beneficio. A través de</p>
+                <p>nuestra metodología apoyamos a nuestros clientes a incrementar su</p>
+                <p>capacidad de producción de proyectos de desarrollo permitiéndoles</p>
+                <p>concentrarse en el core de su negocio.</p>
+
+                <p>Dominamos el desarrollo de aplicaciones en JAVA, .NET, Aplicaciones</p>
+                <p>Móviles y tecnologías emergentes.</p>
+              </q-tab-panel>
+
+              <q-tab-panel name="integracion">
+                <p>Las nuevas tecnologías continúan revolucionando el sector bancario.</p>
+                <p>Los nuevos participantes en el mercado digital incrementan la</p>
+                <p>competencia en mercados ya saturados. Los clientes esperan obtener</p>
+                <p>servicios en línea innovadores pero también de la mano con los</p>
+                <p>productos existentes y en el marco de las normativas actuales.</p>
+                <p>Integramos productos y desarrollos inmersos en la operación actual</p>
+                <p>normada con énfasis en mejorar la experiencia del cliente y </p>
+                <p>optimización de la interacción entre plataformas.</p>
+              </q-tab-panel>
+              
+              <q-tab-panel name="backoffice">
+                <p>En un contexto cada vez más competitivo y complicado como el actual,</p>
+                <p>las empresas aprovechan todos los recursos posibles para disminuir</p>
+                <p>costos, mejorar la organización interna y ofrecer un servicio basado en</p>
+                <p>la excelencia. Un ejemplo concreto de esta realidad es <strong>Back Office</strong>, un</p>
+                <p>conjunto de tareas que engloba una serie de actividades de carácter</p>
+                <p>operativo y administrativo y que son imprescindibles para asegurar el</p>
+                <p>correcto funcionamiento de la corporación.</p>
+
+                <p>Ofrecemos servicios de gestión que ayudan a mejorar la productividad</p>
+                <p>de las empresas optimizando al máximo los recursos disponibles con la</p>
+                <p>ayuda de personal altamente capacitado y con herramientas</p>
+                <p>tecnológicas que permiten monitorear, controlar y asegurar la</p>
+                <p>estabilidad de las operaciones.</p>
+              </q-tab-panel>
+            </q-tab-panels>
+          </template>
+        </q-splitter>
       </div>
     </div>
-
     <!--PRODUCTOS-->
     <div class="row necesidades">
       <h4>
@@ -268,7 +306,7 @@
     </div>
 
     <!--CONTACTO-->
-    <div class="row contacto">
+    <div class="row contacto" id="contacto">
       <img src="../assets/CONTACTO.png" alt="" srcset="" />
     </div>
   </div>
@@ -281,13 +319,8 @@ export default {
   data() {
     return {
       slide: 1,
-      navPos: "bottom",
-      navigationPositions: [
-        { value: "top", label: "top" },
-        { value: "right", label: "right" },
-        { value: "bottom", label: "bottom (default)" },
-        { value: "left", label: "left" },
-      ],
+      tab: 'consultoria',
+      splitterModel: 20
     };
   },
 };
