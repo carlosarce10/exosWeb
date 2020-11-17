@@ -276,7 +276,6 @@
 
 <script>
 import "../css/estilos.css";
-import "../js/app.js";
 export default {
   name: "PageIndex",
   data() {

@@ -17,11 +17,6 @@
             <q-tab class="letras" name="tab5" label="Contacto"></q-tab>
           </q-tabs>
         </div>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
       </q-toolbar>
     </q-header>
     <router-view></router-view>
@@ -29,7 +24,6 @@
 </template>
 <script>
 import "../css/estilos.css";
-import "../js/app.js";
 export default {
   name: "MainLayout",
   data() {
