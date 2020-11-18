@@ -1,8 +1,8 @@
 <template>
   <div>
     <!--SLIDER-->
-    <div>
-      <q-carousel animated v-model="slide" navigation infinite class="carrusel">
+    <div class="qa-pa-md">
+      <q-carousel animated v-model="slide" navigation infinite style="height:65rem">
         <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
         <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
         <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />

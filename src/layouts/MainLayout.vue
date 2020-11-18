@@ -1,7 +1,7 @@
 <template>
   <q-layout >
     <q-header id="nav" class="topnav" elevated>
-      <q-toolbar class="q-pt-xl q-pb-xl bg-white">
+      <q-toolbar class="q-pt-xl q-pb-lg bg-white">
         <q-toolbar-title>
           <q-img src="../assets/logo.png" style="height: 60px; max-width: 150px" class="q-ml-xl"></q-img>
         </q-toolbar-title>
