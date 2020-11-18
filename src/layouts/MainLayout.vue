@@ -1,14 +1,15 @@
 <template>
   <q-layout>
-    <q-header id="nav" class="topnav">
+    <q-header id="nav" class="topnav" elevated>
       <q-toolbar class="q-pt-xl q-pb-xl bg-white">
-        <img
-          class="q-ml-xl"
-          src="../assets/logo.png"
-          style="height: 60px; max-width: 140px"
-        />
-        <q-space />
-        <div class="nav-links">
+        <q-toolbar-title>
+          <q-img
+            src="../assets/logo.png"
+            style="height: 60px; max-width: 150px"
+            class="q-ml-xl"
+          ></q-img>
+        </q-toolbar-title>
+        <div class="gt-sm">
           <q-tabs shrink>
             <q-tab
               v-scroll-to="'#nosotros'"
@@ -42,7 +43,72 @@
             ></q-tab>
           </q-tabs>
         </div>
+        <div class="lt-md">
+          <q-btn
+            color="black"
+            flat
+            dense
+            round
+            @click="leftDrawerOpen = !leftDrawerOpen"
+            icon="menu"
+            aria-label="Menu"
+          >
+          </q-btn>
+        </div>
       </q-toolbar>
+      <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-1">
+        <q-scroll-area
+          style="
+            height: calc(100% - 150px);
+            margin-top: 50px;
+            border-right: 1px solid #ddd;
+            color: black;
+          "
+        >
+          <q-list padding class="menu-list">
+            <q-item
+              clickable
+              v-ripple
+              v-scroll-to="'#nosotros'"
+              @click="leftDrawerOpen = !leftDrawerOpen"
+            >
+              <q-item-section> Nostros </q-item-section>
+            </q-item>
+            <q-item
+              clickable
+              v-ripple
+              v-scroll-to="'#experiencia'"
+              @click="leftDrawerOpen = !leftDrawerOpen"
+            >
+              <q-item-section> Experiencia </q-item-section>
+            </q-item>
+            <q-item
+              clickable
+              v-ripple
+              v-scroll-to="'#productos'"
+              @click="leftDrawerOpen = !leftDrawerOpen"
+            >
+              <q-item-section> Producto </q-item-section>
+            </q-item>
+            <q-item
+              clickable
+              v-ripple
+              v-scroll-to="'#servicios'"
+              @click="leftDrawerOpen = !leftDrawerOpen"
+            >
+              <q-item-section> Servicios </q-item-section>
+            </q-item>
+            <q-item
+              clickable
+              v-ripple
+              v-scroll-to="'#contacto'"
+              @click="leftDrawerOpen = !leftDrawerOpen"
+            >
+              <q-item-section> Contacto </q-item-section>
+            </q-item>
+          </q-list>
+        </q-scroll-area>
+      </q-drawer>
     </q-header>
     <router-view></router-view>
   </q-layout>
@@ -56,7 +122,9 @@ Vue.use(vueScrollto);
 export default {
   name: "MainLayout",
   data() {
-    return {};
+    return {
+      leftDrawerOpen: false,
+    };
   },
 };
 </script>
