@@ -71,92 +71,89 @@
 
     <!-- EXPERIENCIAS DIGITALES-->
     <div class="row clientes q-pb-xl">
-      <div class="col-12 col-md-12 experiencias">
+      <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
-      <div class="row">
-        <div class="col-7 col-4-sm offset-md-2">
-          <q-card flat bordered class="my-card">
-            <q-card-section class="q-ml-md">
-              <div class="text-h2 titulo q-mt-xl">
-                Diseño de <br />
-                experiencias
-              </div>
-            </q-card-section>
-            <q-card-section class="q-pt-none exp q-ml-md">
-              <p>
-                <b>
-                  Evaluamos y analizamos las plataformas <br />
-                  para asegurar una experiencia de <br />
-                  navegación y funcionalidad centrada <br />
-                  100% en las necesidades de los usuarios y <br />
-                  la optimización de operaciones.
-                </b>
-              </p>
-            </q-card-section>
-            <q-card-section class="q-mb-md">
-              <div class="expLista">
-                <li class="q-ml-md">
-                  <strong>Creación de plataformas</strong> amigables, <br />
-                  modernas y disruptivas
-                </li>
-                <li class="q-ml-md">
-                  <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
-                  SCRUM, Blue Ocean, Waterfall, UML, y más.
-                </li>
-                <li class="q-ml-md">
-                  <strong>Análisis</strong> profundo sobre la competencia. el
-                  <br />
-                  mercado y los usuarios.
-                </li>
-                <li class="q-ml-md">
-                  <strong>Establecimiento de directrices</strong> para
-                  interfaces
-                  <br />
-                  gráficas.
-                </li>
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-3 col-4-sm">
-          <q-card flat bordered class="my-card">
-            <q-card-section class="q-ml-md">
-              <div class="text-h2 titulo q-mt-xl">
-                Diseño de <br />
-                interfaces
-              </div>
-            </q-card-section>
-            <q-card-section class="q-pt-none exp q-ml-md">
-              <p>
-                <b>
-                  Creamos e implementamos pantallas que <br />
-                  reflejan la identidad visual de la marca, las <br />
-                  tendencias del mercado y un diseño <br />
-                  visualmente atractivo.
-                </b>
-              </p>
-            </q-card-section>
-            <q-card-section class="q-mb-md q-mt-md">
-              <div class="expLista q-mt-xl">
-                <li class="q-ml-md">
-                  Análisis y documentación de tendencias<br />
-                  actuales
-                </li>
-                <li class="q-ml-md">
-                  Propuestas responsivas y personalizadas <del></del><br />
-                  retículas
-                </li>
-                <li class="q-ml-md">Prototipos de navegación funcional</li>
-                <li class="q-ml-md">
-                  Integración de pantallas a través de <br />
-                  herramientas como Bootstrap, Semantic UI, y <br />
-                  Materialize
-                </li>
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
+      <div class="col-12">
+        <q-card flat bordered class="my-card">
+          <q-card-section class="q-ml-md">
+            <div class="text-h2 titulo q-mt-xl">
+              Diseño de <br />
+              experiencias
+            </div>
+          </q-card-section>
+          <q-card-section class="q-pt-none exp q-ml-md">
+            <p>
+              <b>
+                Evaluamos y analizamos las plataformas <br />
+                para asegurar una experiencia de <br />
+                navegación y funcionalidad centrada <br />
+                100% en las necesidades de los usuarios y <br />
+                la optimización de operaciones.
+              </b>
+            </p>
+          </q-card-section>
+          <q-card-section class="q-mb-md">
+            <div class="expLista">
+              <li class="q-ml-md">
+                <strong>Creación de plataformas</strong> amigables, <br />
+                modernas y disruptivas
+              </li>
+              <li class="q-ml-md">
+                <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
+                SCRUM, Blue Ocean, Waterfall, UML, y más.
+              </li>
+              <li class="q-ml-md">
+                <strong>Análisis</strong> profundo sobre la competencia. el
+                <br />
+                mercado y los usuarios.
+              </li>
+              <li class="q-ml-md">
+                <strong>Establecimiento de directrices</strong> para interfaces
+                <br />
+                gráficas.
+              </li>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-12">
+        <q-card flat bordered class="my-card">
+          <q-card-section class="q-ml-md">
+            <div class="text-h2 titulo q-mt-xl">
+              Diseño de <br />
+              interfaces
+            </div>
+          </q-card-section>
+          <q-card-section class="q-pt-none exp q-ml-md">
+            <p>
+              <b>
+                Creamos e implementamos pantallas que <br />
+                reflejan la identidad visual de la marca, las <br />
+                tendencias del mercado y un diseño <br />
+                visualmente atractivo.
+              </b>
+            </p>
+          </q-card-section>
+          <q-card-section class="q-mb-md q-mt-md">
+            <div class="expLista q-mt-xl">
+              <li class="q-ml-md">
+                Análisis y documentación de tendencias<br />
+                actuales
+              </li>
+              <li class="q-ml-md">
+                Propuestas responsivas y personalizadas <del></del><br />
+                retículas
+              </li>
+              <li class="q-ml-md">Prototipos de navegación funcional</li>
+              <li class="q-ml-md">
+                Integración de pantallas a través de <br />
+                herramientas como Bootstrap, Semantic UI, y <br />
+                Materialize
+              </li>
+            </div>
+          </q-card-section>
+        </q-card>
       </div>
     </div>
 
@@ -166,11 +163,7 @@
     </div>
     <div class="slider">
       <div class="q-pt-xl q-pb-xl">
-        <q-option-group
-          color="purple"
-          inline
-          class="q-mb-md"
-        />
+        <q-option-group color="purple" inline class="q-mb-md" />
         <q-carousel
           animated
           v-model="slide"
@@ -208,90 +201,189 @@
     <div class="row productos" id="servicios">
       <h4>Nuestros servicios</h4>
     </div>
-    <div class="q-pa-md servicios">
-      <div class="q-gutter-y-md">
-        <q-splitter
-          v-model="splitterModel"
-        >
-          <template v-slot:before>
-            <q-tabs
-              v-model="tab"
-              vertical
-              class="text-dark"
-            >
-              <q-tab name="consultoria"  label="Consultoría" />
-              <q-tab name="desarrollos" label="Desarrollos" />
-              <q-tab name="integracion" label="Integración" />
-              <q-tab name="backoffice" label="Back Office" />
-            </q-tabs>
-          </template>
+    <div class="row q-pa-xl servicios">
+      <div class="col-12 col-xs-4">
+        <template>
+          <q-tabs
+            v-model="tab"
+            indicator-color="transparent"
+            vertical
+            class="float-left"
+          >
+            <q-tab
+              class="border-servicios"
+              name="consultoria"
+              label="Consultoría"
+            />
+            <q-tab
+              class="border-servicios"
+              name="desarrollos"
+              label="Desarrollos"
+            />
+            <q-tab
+              class="border-servicios"
+              name="integracion"
+              label="Integración"
+            />
+            <q-tab
+              class="border-servicios"
+              name="backoffice"
+              label="Back Office"
+            />
+          </q-tabs>
+        </template>
 
-          <template v-slot:after>
-            <q-tab-panels
-              v-model="tab"
-              animated
-              swipeable
-              vertical
-              transition-prev="jump-down"
-              transition-next="jump-up"
-            >
-              <q-tab-panel name="consultoria">
-                <p>Amplia experiencia en medios de pago y soluciones tecnológicas,</p>
-                <p>operativas y de negocio para la incorporación al mercado mexicano e</p>
-                <p>internacional. Ofrecemos productos y soluciones acordes a los</p>
-                <p>estándares y necesidades apoyados por análisis de Normativas,</p>
-                <p>auditorías PCI, recomendaciones para adecuación de procesos con las</p>
-                <p>marcas (VISA, MASTERCARD, AMEX).</p>
-                
-                <p>Contamos con expertos que cuenta con más de <strong>25 años de</strong></p>
-                <p><strong>experiencia en la industria</strong> de medios de pago. Es por eso que el</p>
-                <p>enfoque en eXos está orientado a satisfacer las necesidades logísticas,</p>
-                <p>funcionales y tecnológicas del ámbito de medios de pago.</p>
-              </q-tab-panel>
+        <template>
+          <q-tab-panels
+            v-model="tab"
+            animated
+            swipeable
+            vertical
+            transition-prev="jump-down"
+            transition-next="jump-up"
+            class="color-servicios"
+          >
+            <q-tab-panel name="consultoria">
+              <p>
+                Amplia experiencia en medios de pago y soluciones tecnológicas,
+              </p>
+              <p>
+                operativas y de negocio para la incorporación al mercado
+                mexicano e
+              </p>
+              <p>
+                internacional. Ofrecemos productos y soluciones acordes a los
+              </p>
+              <p>
+                estándares y necesidades apoyados por análisis de Normativas,
+              </p>
+              <p>
+                auditorías PCI, recomendaciones para adecuación de procesos con
+                las
+              </p>
+              <p>marcas (VISA, MASTERCARD, AMEX).</p>
+              <br />
 
-              <q-tab-panel name="desarrollos">
-                <p>Somos expertos en Proyectos de Desarrollo de Software basados en</p>
-                <p>las especificaciones de nuestros clientes, y gracias a nuestra</p>
-                <p>experiencia acumulada desde hace mas de 25 años en la industria de</p>
-                <p>medios de pago entregamos al cliente Software, sin defectos,</p>
-                <p>proyectos a tiempo y la mejor relación de costo-beneficio. A través de</p>
-                <p>nuestra metodología apoyamos a nuestros clientes a incrementar su</p>
-                <p>capacidad de producción de proyectos de desarrollo permitiéndoles</p>
-                <p>concentrarse en el core de su negocio.</p>
+              <p>
+                Contamos con expertos que cuenta con más de
+                <strong>25 años de</strong>
+              </p>
+              <p>
+                <strong>experiencia en la industria</strong> de medios de pago.
+                Es por eso que el
+              </p>
+              <p>
+                enfoque en eXos está orientado a satisfacer las necesidades
+                logísticas,
+              </p>
+              <p>funcionales y tecnológicas del ámbito de medios de pago.</p>
+            </q-tab-panel>
 
-                <p>Dominamos el desarrollo de aplicaciones en JAVA, .NET, Aplicaciones</p>
-                <p>Móviles y tecnologías emergentes.</p>
-              </q-tab-panel>
+            <q-tab-panel name="desarrollos">
+              <p>
+                Somos expertos en Proyectos de Desarrollo de Software basados en
+              </p>
+              <p>
+                las especificaciones de nuestros clientes, y gracias a nuestra
+              </p>
+              <p>
+                experiencia acumulada desde hace mas de 25 años en la industria
+                de
+              </p>
+              <p>
+                medios de pago entregamos al cliente Software, sin defectos,
+              </p>
+              <p>
+                proyectos a tiempo y la mejor relación de costo-beneficio. A
+                través de
+              </p>
+              <p>
+                nuestra metodología apoyamos a nuestros clientes a incrementar
+                su
+              </p>
+              <p>
+                capacidad de producción de proyectos de desarrollo
+                permitiéndoles
+              </p>
+              <p>concentrarse en el core de su negocio.</p>
 
-              <q-tab-panel name="integracion">
-                <p>Las nuevas tecnologías continúan revolucionando el sector bancario.</p>
-                <p>Los nuevos participantes en el mercado digital incrementan la</p>
-                <p>competencia en mercados ya saturados. Los clientes esperan obtener</p>
-                <p>servicios en línea innovadores pero también de la mano con los</p>
-                <p>productos existentes y en el marco de las normativas actuales.</p>
-                <p>Integramos productos y desarrollos inmersos en la operación actual</p>
-                <p>normada con énfasis en mejorar la experiencia del cliente y </p>
-                <p>optimización de la interacción entre plataformas.</p>
-              </q-tab-panel>
-              
-              <q-tab-panel name="backoffice">
-                <p>En un contexto cada vez más competitivo y complicado como el actual,</p>
-                <p>las empresas aprovechan todos los recursos posibles para disminuir</p>
-                <p>costos, mejorar la organización interna y ofrecer un servicio basado en</p>
-                <p>la excelencia. Un ejemplo concreto de esta realidad es <strong>Back Office</strong>, un</p>
-                <p>conjunto de tareas que engloba una serie de actividades de carácter</p>
-                <p>operativo y administrativo y que son imprescindibles para asegurar el</p>
-                <p>correcto funcionamiento de la corporación.</p>
+              <p>
+                Dominamos el desarrollo de aplicaciones en JAVA, .NET,
+                Aplicaciones
+              </p>
+              <p>Móviles y tecnologías emergentes.</p>
+            </q-tab-panel>
 
-                <p>Ofrecemos servicios de gestión que ayudan a mejorar la productividad</p>
-                <p>de las empresas optimizando al máximo los recursos disponibles con la</p>
-                <p>ayuda de personal altamente capacitado y con herramientas</p>
-                <p>tecnológicas que permiten monitorear, controlar y asegurar la</p>
-                <p>estabilidad de las operaciones.</p>
-              </q-tab-panel>
-            </q-tab-panels>
-          </template>
-        </q-splitter>
+            <q-tab-panel name="integracion">
+              <p>
+                Las nuevas tecnologías continúan revolucionando el sector
+                bancario.
+              </p>
+              <p>
+                Los nuevos participantes en el mercado digital incrementan la
+              </p>
+              <p>
+                competencia en mercados ya saturados. Los clientes esperan
+                obtener
+              </p>
+              <p>
+                servicios en línea innovadores pero también de la mano con los
+              </p>
+              <p>
+                productos existentes y en el marco de las normativas actuales.
+              </p>
+              <p>
+                Integramos productos y desarrollos inmersos en la operación
+                actual
+              </p>
+              <p>normada con énfasis en mejorar la experiencia del cliente y</p>
+              <p>optimización de la interacción entre plataformas.</p>
+            </q-tab-panel>
+
+            <q-tab-panel name="backoffice">
+              <p>
+                En un contexto cada vez más competitivo y complicado como el
+                actual,
+              </p>
+              <p>
+                las empresas aprovechan todos los recursos posibles para
+                disminuir
+              </p>
+              <p>
+                costos, mejorar la organización interna y ofrecer un servicio
+                basado en
+              </p>
+              <p>
+                la excelencia. Un ejemplo concreto de esta realidad es
+                <strong>Back Office</strong>, un
+              </p>
+              <p>
+                conjunto de tareas que engloba una serie de actividades de
+                carácter
+              </p>
+              <p>
+                operativo y administrativo y que son imprescindibles para
+                asegurar el
+              </p>
+              <p>correcto funcionamiento de la corporación.</p>
+              <br />
+
+              <p>
+                Ofrecemos servicios de gestión que ayudan a mejorar la
+                productividad
+              </p>
+              <p>
+                de las empresas optimizando al máximo los recursos disponibles
+                con la
+              </p>
+              <p>ayuda de personal altamente capacitado y con herramientas</p>
+              <p>
+                tecnológicas que permiten monitorear, controlar y asegurar la
+              </p>
+              <p>estabilidad de las operaciones.</p>
+            </q-tab-panel>
+          </q-tab-panels>
+        </template>
       </div>
     </div>
     <!--PRODUCTOS-->
@@ -307,7 +399,7 @@
 
     <!--CONTACTO-->
     <div class="row contacto" id="contacto">
-      <img src="../assets/CONTACTO.png" alt="" srcset="" />
+      <img src="../assets/CONTACTO.png" />
     </div>
   </div>
 </template>
@@ -319,8 +411,8 @@ export default {
   data() {
     return {
       slide: 1,
-      tab: 'consultoria',
-      splitterModel: 20
+      tab: "consultoria",
+      splitterModel: 20,
     };
   },
 };

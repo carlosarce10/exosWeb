@@ -131,7 +131,7 @@ h3 {
 
 .servicios {
   background-color: #e3e3e3;
-  
+  padding-left: 25%;
 }
 
 a {
@@ -177,4 +177,13 @@ a {
   padding-top: 50px;
   justify-content: center;
   align-items: center;
+}
+.border-servicios {
+  border-bottom: 3px solid;
+  width: 250px;
+  margin-right: 80px;
+  justify-content: initial;
+}
+.color-servicios {
+  background-color: #e3e3e3;
 }
