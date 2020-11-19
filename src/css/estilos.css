@@ -29,6 +29,8 @@ h3 {
 
 .clientes {
   background-color: #e3e3e3;
+  align-items: center;
+  justify-content: center;
 }
 
 .clientes h4 {
@@ -121,8 +123,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
-  width: 145vh;
-  height: 105vh;
+  width: 50%;
+  height: 45rem;
 }
 .carrusel2-img {
   width: 10px;
