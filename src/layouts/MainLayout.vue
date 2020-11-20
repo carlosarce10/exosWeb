@@ -12,31 +12,31 @@
         <div class="gt-sm">
           <q-tabs shrink>
             <q-tab
-              v-scroll-to="'#nosotros'"
+              v-scroll-to="{el: '#nosotros', duration:1500}"
               class="letras"
               name="tab1"
               label="Nosotros"
             ></q-tab>
             <q-tab
-              v-scroll-to="'#experiencia'"
+              v-scroll-to="{el: '#experiencia', duration:1500}"
               class="letras"
               name="tab2"
               label="Experiencia"
             ></q-tab>
             <q-tab
-              v-scroll-to="'#productos'"
+              v-scroll-to="{el: '#productos', duration:1500}"
               class="letras"
               name="tab3"
               label="Producto"
             ></q-tab>
             <q-tab
-              v-scroll-to="'#servicios'"
+              v-scroll-to="{el: '#servicios', duration:1500}"
               class="letras"
               name="tab4"
               label="Servicios"
             ></q-tab>
             <q-tab
-              v-scroll-to="'#contacto'"
+              v-scroll-to="{el: '#contacto', duration:1500}"
               class="letras"
               name="tab5"
               label="Contacto"

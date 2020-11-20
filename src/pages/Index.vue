@@ -1,13 +1,22 @@
 <template>
-  <div>
+  <div >
     <!--SLIDER-->
-    <div>
-      <carousel :nav="false" :autoplay="true" :responsive="{0:{items:1,nav:false},1000:{items:3,nav:true}}">
-        <img src="../assets/banPrin.png">
-        <img src="../assets/banPrin.png">
-        <img src="../assets/banPrin.png">
-        <img src="../assets/banPrin.png">
-      </carousel>
+    <div class="q-pa-xs">
+      <q-responsive :ratio="16/9">
+        <q-carousel
+          animated
+          v-model="slide"
+          navigation
+          infinite
+          transition-prev="slide-right"
+          transition-next="slide-left"
+        >
+          <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
+        </q-carousel>
+      </q-responsive>
     </div> 
 
     <!--ACERCA DE NOSOTROS-->
@@ -190,14 +199,54 @@
       <h4>Nuestros productos</h4>
     </div>
     <div class="row slider">
-      <div class="col q-mt-xl q-mb-xl">
+      <div class="col q-mt-xl q-mb-xl gt-md">
         <q-carousel
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          autoplay=true
           animated
           v-model="slide"
           infinite
           control-color="black"
           class="carrusel2"
           navigation
+          style="width: 50%; height: 45rem;"
+        >
+          <q-carousel-slide
+            :name="1"
+            img-src="../assets/PREAUTORIZADOR.png"
+            class="carrusel2-img"
+          />
+          <q-carousel-slide
+            :name="2"
+            img-src="../assets/SISTEMA.png"
+            class="carrusel2-img"
+          />
+          <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
+          <q-carousel-slide
+            :name="4"
+            img-src="../assets/SHIFT.png"
+            class="carrusel2-img"
+          />
+          <q-carousel-slide
+            :name="5"
+            img-src="../assets/VISION.png"
+            class="carrusel2-img"
+          />
+        </q-carousel>
+      </div>
+      <div class="col q-mt-xl q-mb-xl lt-lg">
+        <q-carousel
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          autoplay=true
+          animated
+          v-model="slide"
+          infinite
+          control-color="black"
+          class="carrusel2"
+          navigation
+          style="width: 95%; height: 35rem;"
         >
           <q-carousel-slide
             :name="1"
