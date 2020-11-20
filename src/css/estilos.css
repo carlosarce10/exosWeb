@@ -7,10 +7,6 @@ body {
   color: black;
   font-weight: bold !important;
 }
-.carrusel {
-  width: 100%;
-  height: auto;
-}
 
 h3 {
   line-height: 0.2;
@@ -126,6 +122,7 @@ h3 {
   width: 50%;
   height: 45rem;
 }
+
 .carrusel2-img {
   width: 10px;
   height: 10px;

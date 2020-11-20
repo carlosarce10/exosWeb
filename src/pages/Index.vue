@@ -1,14 +1,14 @@
 <template>
   <div>
     <!--SLIDER-->
-    <div class="qa-pa-md">
-      <q-carousel animated v-model="slide" navigation infinite style="height:65rem">
-        <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
-        <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
-        <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />
-        <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
-      </q-carousel>
-    </div>
+    <div>
+      <carousel :nav="false" :autoplay="true" :responsive="{0:{items:1,nav:false},1000:{items:3,nav:true}}">
+        <img src="../assets/banPrin.png">
+        <img src="../assets/banPrin.png">
+        <img src="../assets/banPrin.png">
+        <img src="../assets/banPrin.png">
+      </carousel>
+    </div> 
 
     <!--ACERCA DE NOSOTROS-->
     <div class="nosotros" id="nosotros">
@@ -589,8 +589,10 @@
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel2'
 import "../css/estilos.css";
 export default {
+  components: { carousel },
   name: "PageIndex",
   data() {
     return {

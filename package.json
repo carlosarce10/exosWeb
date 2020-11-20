@@ -12,6 +12,7 @@
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
     "quasar": "^1.0.0",
+    "vue-owl-carousel2": "^2.0.7",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
