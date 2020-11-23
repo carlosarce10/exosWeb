@@ -204,7 +204,7 @@
       <h4>Nuestros productos</h4>
     </div>
     <div class="slider q-pt-xl q-pb-xl">
-      <q-responsive :ratio="13/11">
+      <q-responsive :ratio="13/11" style="width: 80%; max-width: 100%;">
         <q-carousel
           ref="carousel"
           transition-prev="slide-right"
