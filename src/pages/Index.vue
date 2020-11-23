@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <>
     <div>
       <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
         <q-carousel
@@ -203,7 +203,7 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class="slider q-pt-xl q-pb-xl">
+    <div class="col slider q-pt-xl q-pb-xl">
       <q-responsive :ratio="13/11">
         <q-carousel
           ref="carousel"
@@ -214,7 +214,7 @@
           v-model="slide"
           infinite
           control-color="black"
-          class="carrusel2"
+            
         >
           <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
           <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
