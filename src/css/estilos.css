@@ -123,8 +123,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
-  width: 55%;
-  height: 100%;
+  width: 60% !important;
+  height: 50% !important;
 }
 
 .carrusel2-img {
@@ -154,6 +154,7 @@ a {
 .unete {
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .necesidades {

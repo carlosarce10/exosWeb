@@ -203,57 +203,51 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class="row slider">
-      <div class="col-8 offset-2 q-mt-xl q-mb-xl">
-        <q-responsive :ratio="13 / 11" style="width: 80%; max-width: 100%">
-          <q-carousel
-            ref="carousel"
-            transition-prev="slide-right"
-            transition-next="slide-left"
-            animated
-            swipeable
-            v-model="slide"
-            infinite
-            control-color="black"
-            class="bg-grey-1 shadow-2"
-            style="border-radius: 25px"
-          >
-            <q-carousel-slide
-              :name="1"
-              img-src="../assets/PREAUTORIZADOR.png"
-            />
-            <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
-            <q-carousel-slide :name="3" img-src="../assets/HUB.png" />
-            <q-carousel-slide :name="4" img-src="../assets/SHIFT.png" />
-            <q-carousel-slide :name="5" img-src="../assets/VISION.png" />
+    <div class="slider q-pt-xl q-pb-xl">
+      <q-responsive :ratio="13/11">
+        <q-carousel
+          ref="carousel"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          animated
+          swipeable
+          v-model="slide"
+          infinite
+          control-color="black"
+          class="carrusel2"
+        >
+          <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
+          <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
+          <q-carousel-slide :name="3" img-src="../assets/HUB.png" />
+          <q-carousel-slide :name="4" img-src="../assets/SHIFT.png" />
+          <q-carousel-slide :name="5" img-src="../assets/VISION.png" />
 
-            <template v-slot:control>
-              <q-carousel-control
-                position="bottom-right"
-                :offset="[18, 0]"
-                class="q-gutter-xl"
-              >
-                <q-btn
-                  push
-                  round
-                  flat
-                  text-color="black"
-                  icon="arrow_left"
-                  @click="$refs.carousel.previous()"
-                />
-                <q-btn
-                  push
-                  round
-                  flat
-                  text-color="black"
-                  icon="arrow_right"
-                  @click="$refs.carousel.next()"
-                />
-              </q-carousel-control>
-            </template>
-          </q-carousel>
-        </q-responsive>
-      </div>
+          <template v-slot:control>
+            <q-carousel-control
+              position="bottom-right"
+              :offset="[18, 0]"
+              class="q-gutter-xl"
+            >
+              <q-btn
+                push
+                round
+                flat
+                text-color="black"
+                icon="arrow_left"
+                @click="$refs.carousel.previous()"
+              />
+              <q-btn
+                push
+                round
+                flat
+                text-color="black"
+                icon="arrow_right"
+                @click="$refs.carousel.next()"
+              />
+            </q-carousel-control>
+          </template>
+        </q-carousel>
+      </q-responsive>
     </div>
 
     <!--NUESTROS SERVICIOS-->
@@ -618,12 +612,12 @@
       </h4>
     </div>
     <div class="row unete">
-      <img src="../assets/UNETE.png" alt="" />
+      <img src="../assets/UNETE.png" class="col-12" />
     </div>
 
     <!--CONTACTO-->
     <div class="row contacto" id="contacto">
-      <img src="../assets/CONTACTO.png" />
+      <img src="../assets/CONTACTO.png" class="col-3" />
     </div>
   </div>
 </template>
