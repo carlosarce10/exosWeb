@@ -1,22 +1,23 @@
 <template>
   <div>
-    <!--SLIDER-->
     <div>
-      <carousel
-        :nav="false"
-        :autoplay="true"
-        :responsive="{
-          0: { items: 1, nav: false },
-          1000: { items: 3, nav: true }
-        }"
-      >
-        <img src="../assets/banPrin.png" />
-        <img src="../assets/banPrin.png" />
-        <img src="../assets/banPrin.png" />
-        <img src="../assets/banPrin.png" />
-      </carousel>
+      <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
+        <q-carousel
+          swipeable
+          animated
+          navigation
+          v-model="slide"
+          infinite
+          transition-prev="slide-right"
+          transition-next="slide-left"
+        >
+          <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
+        </q-carousel>
+      </q-responsive>
     </div>
-
     <!--ACERCA DE NOSOTROS-->
     <div class="nosotros" id="nosotros">
       <div class="row gt-sm">
@@ -202,38 +203,57 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
+    <div class="row slider">
+      <div class="col-8 offset-2 q-mt-xl q-mb-xl">
+        <q-responsive :ratio="13 / 11" style="width: 80%; max-width: 100%">
+          <q-carousel
+            ref="carousel"
+            transition-prev="slide-right"
+            transition-next="slide-left"
+            animated
+            swipeable
+            v-model="slide"
+            infinite
+            control-color="black"
+            class="bg-grey-1 shadow-2"
+            style="border-radius: 25px"
+          >
+            <q-carousel-slide
+              :name="1"
+              img-src="../assets/PREAUTORIZADOR.png"
+            />
+            <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
+            <q-carousel-slide :name="3" img-src="../assets/HUB.png" />
+            <q-carousel-slide :name="4" img-src="../assets/SHIFT.png" />
+            <q-carousel-slide :name="5" img-src="../assets/VISION.png" />
 
-    <div class="slider q-pt-xl q-pb-xl">
-      <q-carousel
-        animated
-        v-model="slide"
-        infinite
-        control-color="black"
-        class="carrusel2"
-        navigation
-      >
-        <q-carousel-slide
-          :name="1"
-          img-src="../assets/PREAUTORIZADOR.png"
-          class="carrusel2-img col-md-12"
-        />
-        <q-carousel-slide
-          :name="2"
-          img-src="../assets/SISTEMA.png"
-          class="carrusel2-img"
-        />
-        <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
-        <q-carousel-slide
-          :name="4"
-          img-src="../assets/SHIFT.png"
-          class="carrusel2-img"
-        />
-        <q-carousel-slide
-          :name="5"
-          img-src="../assets/VISION.png"
-          class="carrusel2-img"
-        />
-      </q-carousel>
+            <template v-slot:control>
+              <q-carousel-control
+                position="bottom-right"
+                :offset="[18, 0]"
+                class="q-gutter-xl"
+              >
+                <q-btn
+                  push
+                  round
+                  flat
+                  text-color="black"
+                  icon="arrow_left"
+                  @click="$refs.carousel.previous()"
+                />
+                <q-btn
+                  push
+                  round
+                  flat
+                  text-color="black"
+                  icon="arrow_right"
+                  @click="$refs.carousel.next()"
+                />
+              </q-carousel-control>
+            </template>
+          </q-carousel>
+        </q-responsive>
+      </div>
     </div>
 
     <!--NUESTROS SERVICIOS-->
@@ -609,17 +629,15 @@
 </template>
 
 <script>
-import carousel from "vue-owl-carousel2";
 import "../css/estilos.css";
 export default {
-  components: { carousel },
   name: "PageIndex",
   data() {
     return {
       slide: 1,
       tab: "consultoria",
-      splitterModel: 20
+      splitterModel: 20,
     };
-  }
+  },
 };
 </script>
