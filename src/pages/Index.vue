@@ -198,7 +198,7 @@
       <h4>Nuestros productos</h4>
     </div>
     <div class="row slider">
-      <div class="col-8 offset-md-2 q-mt-xl q-mb-xl">
+      <div class="col-8 offset-2 q-mt-xl q-mb-xl">
         <q-responsive :ratio="13/11" style="width: 80%; max-width: 100%;">
           <q-carousel
             ref="carousel"
