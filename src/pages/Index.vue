@@ -1,12 +1,12 @@
 <template>
-  <div >
-    <!--SLIDER-->
-    <div class="q-pa-xs">
-      <q-responsive :ratio="16/9">
+  <div>
+    <div>
+      <q-responsive :ratio="16/9" style="width: 100%; max-width: 100%;">
         <q-carousel
+          swipeable
           animated
-          v-model="slide"
           navigation
+          v-model="slide"
           infinite
           transition-prev="slide-right"
           transition-next="slide-left"
@@ -17,8 +17,7 @@
           <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
         </q-carousel>
       </q-responsive>
-    </div> 
-
+    </div>
     <!--ACERCA DE NOSOTROS-->
     <div class="nosotros" id="nosotros">
       <div class="row gt-sm">
@@ -199,77 +198,57 @@
       <h4>Nuestros productos</h4>
     </div>
     <div class="row slider">
-      <div class="col q-mt-xl q-mb-xl gt-md">
-        <q-carousel
-          transition-prev="slide-right"
-          transition-next="slide-left"
-          autoplay=true
-          animated
-          v-model="slide"
-          infinite
-          control-color="black"
-          class="carrusel2"
-          navigation
-          style="width: 50%; height: 45rem;"
-        >
-          <q-carousel-slide
-            :name="1"
-            img-src="../assets/PREAUTORIZADOR.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide
-            :name="2"
-            img-src="../assets/SISTEMA.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
-          <q-carousel-slide
-            :name="4"
-            img-src="../assets/SHIFT.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide
-            :name="5"
-            img-src="../assets/VISION.png"
-            class="carrusel2-img"
-          />
-        </q-carousel>
-      </div>
-      <div class="col q-mt-xl q-mb-xl lt-lg">
-        <q-carousel
-          transition-prev="slide-right"
-          transition-next="slide-left"
-          autoplay=true
-          animated
-          v-model="slide"
-          infinite
-          control-color="black"
-          class="carrusel2"
-          navigation
-          style="width: 95%; height: 35rem;"
-        >
-          <q-carousel-slide
-            :name="1"
-            img-src="../assets/PREAUTORIZADOR.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide
-            :name="2"
-            img-src="../assets/SISTEMA.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide :name="3" img-src="../assets/HUB.png" class="img" />
-          <q-carousel-slide
-            :name="4"
-            img-src="../assets/SHIFT.png"
-            class="carrusel2-img"
-          />
-          <q-carousel-slide
-            :name="5"
-            img-src="../assets/VISION.png"
-            class="carrusel2-img"
-          />
-        </q-carousel>
+      <div class="col-8 offset-md-2 q-mt-xl q-mb-xl">
+        <q-responsive :ratio="13/11" style="width: 80%; max-width: 100%;">
+          <q-carousel
+            ref="carousel"
+            transition-prev="slide-right"
+            transition-next="slide-left"
+            animated
+            swipeable
+            v-model="slide"
+            infinite
+            control-color="black"
+            class="bg-grey-1 shadow-2 "
+            style="border-radius:25px"
+          >
+            <q-carousel-slide
+              :name="1"
+              img-src="../assets/PREAUTORIZADOR.png"
+              
+            />
+            <q-carousel-slide
+              :name="2"
+              img-src="../assets/SISTEMA.png"
+            />
+            <q-carousel-slide :name="3" img-src="../assets/HUB.png"/>
+            <q-carousel-slide
+              :name="4"
+              img-src="../assets/SHIFT.png"
+            />
+            <q-carousel-slide
+              :name="5"
+              img-src="../assets/VISION.png"
+            />
+
+        <template v-slot:control>
+          <q-carousel-control
+            position="bottom-right"
+            :offset="[18, 0]"
+            class="q-gutter-xl"
+          >
+            <q-btn
+              push round flat text-color="black" icon="arrow_left"
+              @click="$refs.carousel.previous()"
+            />
+            <q-btn
+              push round flat text-color="black" icon="arrow_right"
+              @click="$refs.carousel.next()"
+            />
+           </q-carousel-control>
+        </template>
+          </q-carousel>
+        </q-responsive>
       </div>
     </div>
 
@@ -638,10 +617,8 @@
 </template>
 
 <script>
-import carousel from 'vue-owl-carousel2'
 import "../css/estilos.css";
 export default {
-  components: { carousel },
   name: "PageIndex",
   data() {
     return {

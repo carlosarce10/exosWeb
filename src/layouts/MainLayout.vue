@@ -1,6 +1,6 @@
 <template>
-  <q-layout>
-    <q-header id="nav" class="topnav" elevated>
+  <q-layout >
+    <q-header id="nav" class="topnav" elevated >
       <q-toolbar class="q-pt-xl q-pb-lg bg-white">
         <q-toolbar-title>
           <q-img
@@ -56,7 +56,7 @@
           </q-btn>
         </div>
       </q-toolbar>
-      <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-1">
+      <q-drawer show-if-above  v-model="leftDrawerOpen" side="left" bordered content-class="bg-grey-1">
         <q-scroll-area
           style="
             height: calc(100% - 150px);
@@ -110,7 +110,9 @@
         </q-scroll-area>
       </q-drawer>
     </q-header>
-    <router-view></router-view>
+    <q-page-container style="padding-left:0px;">
+      <router-view></router-view>
+    </q-page-container>
   </q-layout>
 </template>
 <script>
