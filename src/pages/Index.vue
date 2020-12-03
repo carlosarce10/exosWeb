@@ -1,5 +1,5 @@
 <template>
-  <>
+  <div>
     <div>
       <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
         <q-carousel
@@ -112,7 +112,7 @@
     </div>
 
     <!-- EXPERIENCIAS DIGITALES-->
-    <div class="row clientes">
+    <div class="row items-start clientes">
       <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
@@ -160,42 +160,42 @@
         </q-card>
       </div>
       <div class="q-mb-xl q-ml-xl">
-        <q-card flat bordered class="my-card">
-          <q-card-section class="q-ml-md">
-            <div class="text-h2 titulo q-mt-xl">
-              Diseño de <br />
-              interfaces
-            </div>
-          </q-card-section>
-          <q-card-section class="q-pt-none exp q-ml-md">
-            <p>
-              <b>
-                Creamos e implementamos pantallas que <br />
-                reflejan la identidad visual de la marca, las <br />
-                tendencias del mercado y un diseño <br />
-                visualmente atractivo.
-              </b>
-            </p>
-          </q-card-section>
-          <q-card-section class="q-mb-md q-mt-md">
-            <div class="expLista q-mt-xl">
-              <li class="q-ml-md">
-                Análisis y documentación de tendencias<br />
-                actuales
-              </li>
-              <li class="q-ml-md">
-                Propuestas responsivas y personalizadas <del></del><br />
-                retículas
-              </li>
-              <li class="q-ml-md">Prototipos de navegación funcional</li>
-              <li class="q-ml-md">
-                Integración de pantallas a través de <br />
-                herramientas como Bootstrap, Semantic UI, y <br />
-                Materialize
-              </li>
-            </div>
-          </q-card-section>
-        </q-card>
+          <q-card flat bordered class="my-card">
+            <q-card-section class="q-ml-md">
+              <div class="text-h2 titulo q-mt-xl">
+                Diseño de <br />
+                interfaces
+              </div>
+            </q-card-section>
+            <q-card-section class="q-pt-none exp q-ml-md">
+              <p>
+                <b>
+                  Creamos e implementamos pantallas que <br />
+                  reflejan la identidad visual de la marca, las <br />
+                  tendencias del mercado y un diseño <br />
+                  visualmente atractivo.
+                </b>
+              </p>
+            </q-card-section>
+            <q-card-section class="q-mb-md q-mt-md">
+              <div class="expLista q-mt-xl">
+                <li class="q-ml-md">
+                  Análisis y documentación de tendencias<br />
+                  actuales
+                </li>
+                <li class="q-ml-md">
+                  Propuestas responsivas y personalizadas <del></del><br />
+                  retículas
+                </li>
+                <li class="q-ml-md">Prototipos de navegación funcional</li>
+                <li class="q-ml-md">
+                  Integración de pantallas a través de <br />
+                  herramientas como Bootstrap, Semantic UI, y <br />
+                  Materialize
+                </li>
+              </div>
+            </q-card-section>
+          </q-card>
       </div>
     </div>
 
@@ -203,8 +203,8 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class="col slider q-pt-xl q-pb-xl">
-      <q-responsive :ratio="13/11">
+    <div class="slider q-pt-xl q-pb-xl">
+      <q-responsive :ratio="13/11" style="width: 80%; max-width: 100%;">
         <q-carousel
           ref="carousel"
           transition-prev="slide-right"
@@ -214,6 +214,8 @@
           v-model="slide"
           infinite
           control-color="black"
+          class="shadow-6"
+          style="border-radius:15px"
             
         >
           <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
@@ -226,7 +228,7 @@
             <q-carousel-control
               position="bottom-right"
               :offset="[18, 0]"
-              class="q-gutter-xl"
+              class="q-gutter-md"
             >
               <q-btn
                 push
