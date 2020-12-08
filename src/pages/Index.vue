@@ -116,7 +116,7 @@
       <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
-      <div class="q-mb-xl q-ml-xl">
+      <div class="q-mb-xl q-ml-xl col-6-md">
         <q-card flat bordered class="my-card">
           <q-card-section class="q-ml-md">
             <div class="text-h2 titulo q-mt-xl">
@@ -159,7 +159,7 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="q-mb-xl q-ml-xl">
+      <div class="q-mb-xl q-ml-xl col-6-md">
           <q-card flat bordered class="my-card">
             <q-card-section class="q-ml-md">
               <div class="text-h2 titulo q-mt-xl">
@@ -607,11 +607,9 @@
       </div>
     </div>
     <!--PRODUCTOS-->
-    <div class="row necesidades">
-      <h4>
-        Productos que se adaptan a las <br />
-        necesidades de cada usuario
-      </h4>
+    <div class="row">
+        <img src="../assets/BANNER FRASE.png" class="col-12">
+
     </div>
     <div class="row unete">
       <img src="../assets/UNETE.png" class="col-12" />
