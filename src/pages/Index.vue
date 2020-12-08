@@ -116,7 +116,7 @@
       <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
-      <div class="q-mb-xl q-ml-xl col-6-md">
+      <!-- <div class="q-mb-xl q-ml-xl col-6-md">
         <q-card flat bordered class="my-card">
           <q-card-section class="q-ml-md">
             <div class="text-h2 titulo q-mt-xl">
@@ -196,7 +196,7 @@
               </div>
             </q-card-section>
           </q-card>
-      </div>
+      </div> -->
     </div>
 
     <!--NUESTROS PRODUCTOS-->
