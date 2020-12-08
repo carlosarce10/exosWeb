@@ -68,7 +68,7 @@
             <b>más de 25 años de experiencia laboral,</b> trabajando
           </p>
           <p>con Bancos, Instituciones Financieras y Fintechs, Nacionales e</p>
-          <p>Internacionales</p>
+          <p>Internacionales....</p>
 
           <p>
             Formamos un equipo <b>multidisciplinario</b> con experiencias en
@@ -77,7 +77,7 @@
           <p>
             ámbitos tales como Medios de pago, TI, Operaciones, Negociación y
           </p>
-          <p>Relaciones entre participantes en el mercado mexicano</p>
+          <p>Relaciones entre participantes en el mercado mexicanos</p>
         </div>
       </div>
     </div>
@@ -111,20 +111,17 @@
       </div>
     </div>
 
-    <!-- EXPERIENCIAS DIGITALES-->
-    <div class="row items-start clientes">
-      <div class="col-12 experiencias">
-        <h4>Experiencias digitales e interactivas (UX/UI)</h4>
-      </div>
-      <div class="q-mb-xl q-ml-xl col-6-md">
-        <q-card flat bordered class="my-card">
-          <q-card-section class="q-ml-md">
+    <div class="items-start  clientes">
+      <q-responsive :ratio="16/9" style="width: 80%; max-width: 100%;" class="row">
+        <q-card flat bordered  class="col">
+          <q-card-section >
             <div class="text-h2 titulo q-mt-xl">
               Diseño de <br />
               experiencias
             </div>
           </q-card-section>
-          <q-card-section class="q-pt-none exp q-ml-md">
+          <q-card-section class=" q-ml-md">
+            <div>
             <p>
               <b>
                 Evaluamos y analizamos las plataformas <br />
@@ -134,9 +131,11 @@
                 la optimización de operaciones.
               </b>
             </p>
+            </div>
           </q-card-section>
           <q-card-section class="q-mb-md">
             <div class="expLista">
+              <div>
               <li class="q-ml-md">
                 <strong>Creación de plataformas</strong> amigables, <br />
                 modernas y disruptivas
@@ -155,13 +154,15 @@
                 <br />
                 gráficas.
               </li>
+              </div>
             </div>
           </q-card-section>
         </q-card>
-      </div>
-      <div class="q-mb-xl q-ml-xl col-6-md">
-          <q-card flat bordered class="my-card">
-            <q-card-section class="q-ml-md">
+      </q-responsive>
+
+      <q-responsive :ratio="16/9" style="width: 80%; max-width: 100%;" class="row">
+        <q-card flat bordered  class="col">
+          <q-card-section class="q-ml-md">
               <div class="text-h2 titulo q-mt-xl">
                 Diseño de <br />
                 interfaces
@@ -195,8 +196,8 @@
                 </li>
               </div>
             </q-card-section>
-          </q-card>
-      </div>
+        </q-card>
+      </q-responsive>
     </div>
 
     <!--NUESTROS PRODUCTOS-->
