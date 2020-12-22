@@ -8,9 +8,7 @@ body {
   font-weight: bold !important;
 }
 
-h3 {
-  line-height: 0.2;
-}
+
 
 .carrusel {
   height: 65rem;
@@ -50,13 +48,26 @@ h3 {
   -o-background-size: cover;
   background-size: cover;
 }
+.imgExp2{
+  background-image: url(../assets/exp.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+.imgExp2 div{
+  margin-left: 2%;
+  color: white;
+}
+
 .imgExp div {
   margin-left: 15%;
   color: white;
 }
 
 .experiencias {
-  height: 100vh;
   background-color: #e3e3e3;
   text-align: center;
   justify-content: center;
@@ -65,18 +76,21 @@ h3 {
 
 .exp p {
   text-align: justify;
-  font-size: x-large;
+  font-size: large;
 }
 .expAreas {
   margin-left: 2%;
   text-align: justify;
   font-size: medium;
 }
+.expAreas2 {
+  font-size: medium;
+}
 .expAreas li {
   margin-top: 2%;
 }
 .expLista {
-  margin-left: 2%;
+ 
   text-align: justify;
   font-size: medium;
 }
@@ -95,8 +109,6 @@ h3 {
 }
 
 .my-card {
-  min-height: 65vh;
-  width: 35rem;
   border-radius: 30px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
@@ -168,6 +180,7 @@ a {
   padding-top: 50px;
   justify-content: center;
   align-items: center;
+
 }
 .border-servicios {
   border-bottom: 3px solid;
@@ -178,3 +191,4 @@ a {
 .color-servicios {
   background-color: #aaaaaa;
 }
+

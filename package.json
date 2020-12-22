@@ -1,9 +1,9 @@
 {
   "name": "pagweb",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
-  "author": "carlo <carlosarce800@gmail.com>",
+  "description": "Soluciones en medios de pago",
+  "productName": "eXos",
+  "author": "Diego Calderón <diego.calderon@exos.mx>",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"

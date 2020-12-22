@@ -1,7 +1,7 @@
 <template>
   <q-layout >
     <q-header id="nav" class="topnav" >
-      <q-toolbar class="q-pt-xl q-pb-md bg-white">
+      <q-toolbar class="q-pt-lg q-pb-md bg-white">
         <q-toolbar-title>
           <q-img
             src="../assets/logo.png"
@@ -27,7 +27,7 @@
               v-scroll-to="{el: '#productos', duration:1500}"
               class="letras"
               name="tab3"
-              label="Producto"
+              label="Productos"
             ></q-tab>
             <q-tab
               v-scroll-to="{el: '#servicios', duration:1500}"
@@ -88,7 +88,7 @@
               v-scroll-to="'#productos'"
               @click="leftDrawerOpen = !leftDrawerOpen"
             >
-              <q-item-section> Producto </q-item-section>
+              <q-item-section> Productos </q-item-section>
             </q-item>
             <q-item
               clickable

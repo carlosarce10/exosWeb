@@ -1,5 +1,7 @@
 <template>
   <div>
+
+    <!-- CARRUSEL-->
     <div>
       <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
         <q-carousel
@@ -50,47 +52,66 @@
           <p>Relaciones entre participantes en el mercado mexicano</p>
         </div>
       </div>
-      <div class="lt-md q-ml-xl q-pl-xl">
+      <div class="lt-md  q-pl-xl">
         <div class="col-12">
           <h3>Acerca</h3>
           <h3>de nosotros</h3>
         </div>
         <div class="col-12">
-          <p>Nos constituímos como una sociedad en 2016 con el propósito de</p>
+          <p>Nos constituímos como una sociedad en 2016 con el propósito de ofrecer servicios </p>
           <p>
-            ofrecer servicios especializados de
-            <b>medios de pago, consultoría y</b>
+              especializados de
+            <b>medios de pago, consultoría y <b>desarrollo de software.</b></b>
           </p>
-          <p><b>desarrollo de software.</b></p>
 
           <p>
             Contamos con
-            <b>más de 25 años de experiencia laboral,</b> trabajando
+            <b>más de 25 años de experiencia laboral,</b> trabajando con
           </p>
-          <p>con Bancos, Instituciones Financieras y Fintechs, Nacionales e</p>
-          <p>Internacionales....</p>
-
+          <p> Bancos, Instituciones Financieras y Fintechs, Nacionales e Internacionales.</p>
           <p>
             Formamos un equipo <b>multidisciplinario</b> con experiencias en
-            diversos
+            diversos ámbitos tales como 
           </p>
           <p>
-            ámbitos tales como Medios de pago, TI, Operaciones, Negociación y
+            Medios de pago, TI, Operaciones, Negociación y Relaciones entre 
           </p>
-          <p>Relaciones entre participantes en el mercado mexicanos</p>
+          <p>participantes en el mercado mexicano.</p>
         </div>
       </div>
     </div>
     <!--NUESTROS CLIENTES-->
-    <div class="row clientes q-pb-xl" id="#clientes">
+    <div style=" justify-content:center;">
+    <div class="row clientes q-pb-sm" id="#clientes">
       <div class="col-12 col-md-12">
         <h4>Nuestros clientes</h4>
-        <img src="../assets/clientes.png" alt="" />
       </div>
     </div>
-
+    <div class="row clientes q-pr-sm" style=" justify-content:center;">
+        <div class="col-2 q-ml-xl">
+          <q-img  src="../assets/eglobal.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl">
+          <q-img src="../assets/mastercard.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl">
+          <q-img src="../assets/prosa.png" alt="" />
+        </div>
+    </div>
+    <div class="row clientes q-pr-sm" style=" justify-content:center;">
+      <div class="col-1 q-ml-xl q-mb-xl">
+          <q-img src="../assets/sodexo.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl q-mb-xl">
+          <q-img src="../assets/broxel.png" alt="" />
+        </div>
+        <div class="col-1 q-ml-xl q-mb-xl">
+          <q-img src="../assets/ACI.png" alt="" />
+        </div>
+    </div>
+</div>
     <!-- AREAS DE EXPERIENCIA-->
-    <div class="row imgExp" id="experiencia">
+    <div class="row gt-sm imgExp" id="experiencia">
       <div class="col-10 col-4-md" style="margin-top: 7%">
         <h3>Áreas de</h3>
         <h3>experiencia</h3>
@@ -111,61 +132,81 @@
       </div>
     </div>
 
+    <div class="row lt-md imgExp2" id="experiencia">
+      <div class="col-10 col-4-md" style="margin-top: 7%;  margin-left: 7%;">
+        <h3>Áreas de</h3>
+        <h3>experiencia</h3>
+      </div>
+      <div class="col-10 col-4-md" style="margin-top: 6%; margin-left: 7%;">
+        <h3>Somos expertos</h3>
+      </div>
+      <div class="expAreas2 q-mt-md q-mb-xl">
+        <ul>
+        <li>Integración a la banca mexicana para emisores <br> / adquirentes</li>
+        <li>Reglamentación local / ABM / Banxico</li>
+        <li>
+          Análisis y construcción de interfaces especialidades en la banca
+        </li>
+        <li>Cuota de intercambio</li>
+        <li>Minería de datos y análisis transaccional</li>
+        </ul>
+        <br />
+        <br />
+      </div>
+    </div>
+
     <!-- EXPERIENCIAS DIGITALES-->
-    <div class="row items-start clientes">
+    <div class="q-pa-md clientes">
       <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
-      <!-- <div class="q-mb-xl q-ml-xl col-6-md">
-        <q-card flat bordered class="my-card">
-          <q-card-section class="q-ml-md">
-            <div class="text-h2 titulo q-mt-xl">
-              Diseño de <br />
-              experiencias
-            </div>
-          </q-card-section>
-          <q-card-section class=" q-ml-md">
-            <div>
-            <p>
-              <b>
-                Evaluamos y analizamos las plataformas <br />
-                para asegurar una experiencia de <br />
-                navegación y funcionalidad centrada <br />
-                100% en las necesidades de los usuarios y <br />
-                la optimización de operaciones.
-              </b>
-            </p>
-            </div>
-          </q-card-section>
-          <q-card-section class="q-mb-md">
-            <div class="expLista">
-              <div>
-              <li class="q-ml-md">
-                <strong>Creación de plataformas</strong> amigables, <br />
-                modernas y disruptivas
-              </li>
-              <li class="q-ml-md">
-                <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
-                SCRUM, Blue Ocean, Waterfall, UML, y más.
-              </li>
-              <li class="q-ml-md">
-                <strong>Análisis</strong> profundo sobre la competencia. el
-                <br />
-                mercado y los usuarios.
-              </li>
-              <li class="q-ml-md">
-                <strong>Establecimiento de directrices</strong> para interfaces
-                <br />
-                gráficas.
-              </li>
+      <div class="row q-gutter-xl q-mb-xl" style="justify-content:center;">
+          <q-card flat bordered class="column my-card">
+            <q-card-section class="q-ml-md">
+              <div class="text-h2 titulo q-mt-xl">
+                Diseño de <br />
+                experiencias
               </div>
-            </div>
-          </q-card-section>
-        </q-card>
-      </q-responsive>
-
-      <q-responsive :ratio="16/9" style="width: 80%; max-width: 100%;" class="row">
-        <q-card flat bordered  class="col">
+            </q-card-section>
+            <q-card-section class="q-pt-none exp q-ml-md">
+              <div>
+              <p>
+                <b>
+                  Evaluamos y analizamos las plataformas <br />
+                  para asegurar una experiencia de <br />
+                  navegación y funcionalidad centrada <br />
+                  100% en las necesidades de los usuarios y <br />
+                  la optimización de operaciones.
+                </b>
+              </p>
+              </div>
+            </q-card-section>
+            <q-card-section class="q-mb-md">
+              <div class="expLista">
+                <di v>
+                <li class="q-ml-md">
+                  <strong>Creación de plataformas</strong> amigables, <br />
+                  modernas y disruptivas
+                </li>
+                <li class="q-ml-md">
+                  <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
+                  SCRUM, Blue Ocean, Waterfall, UML, y más.
+                </li>
+                <li class="q-ml-md">
+                  <strong>Análisis</strong> profundo sobre la competencia. el
+                  <br />
+                  mercado y los usuarios.
+                </li>
+                <li class="q-ml-md">
+                  <strong>Establecimiento de directrices</strong> para interfaces
+                  <br />
+                  gráficas.
+                </li>
+                </di>
+              </div>
+            </q-card-section>
+          </q-card>
+          <q-card flat bordered  class="column my-card">
           <q-card-section class="q-ml-md">
               <div class="text-h2 titulo q-mt-xl">
                 Diseño de <br />
@@ -182,7 +223,7 @@
                 </b>
               </p>
             </q-card-section>
-            <q-card-section class="q-mb-md q-mt-md">
+            <q-card-section class="q-mb-md">
               <div class="expLista q-mt-xl">
                 <li class="q-ml-md">
                   Análisis y documentación de tendencias<br />
@@ -201,7 +242,7 @@
               </div>
             </q-card-section>
           </q-card>
-      </div> -->
+      </div> 
     </div>
 
     <!--NUESTROS PRODUCTOS-->
@@ -451,8 +492,9 @@
           </template>
         </div>
       </div>
+
       <div class="lt-md">
-        <div class="q-mr-xl q-mt-xl">
+        <div class="q-mt-xl">
           <template>
             <q-tab-panels
               v-model="tab"
@@ -611,18 +653,23 @@
         </div>
       </div>
     </div>
-    <!--PRODUCTOS-->
-    <div class="row">
-        <img src="../assets/BANNER FRASE.png" class="col-12">
 
-    </div>
+    <q-page-scroller position="bottom-right" :scroll-offset="500" :offset="[18, 18]" :duration="1000">
+      <q-btn fab icon="keyboard_arrow_up" style="background-color:#ff0063; color: white "></q-btn>
+    </q-page-scroller>
+
+    <!--PRODUCTOS-->
+   <div class="row productos">
+     <h4>Productos que se adaptan a las<br> necesidades de cada usuario</h4>
+   </div>
+    
     <div class="row unete">
       <img src="../assets/UNETE.png" class="col-12" />
     </div>
 
     <!--CONTACTO-->
     <div class="row contacto" id="contacto">
-      <img src="../assets/CONTACTO.png" class="col-3" />
+        <q-img src="../assets/CONTACTO.png" class="col-2" />
     </div>
   </div>
 </template>
