@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!-- CARRUSEL-->
     <div>
       <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
@@ -54,13 +53,16 @@
       </div>
       <div class="lt-md  q-pl-xl">
         <div class="col-12">
-          <h3>Acerca</h3>
+          <h3 style="margin-bottom: -35px;">Acerca</h3>
           <h3>de nosotros</h3>
         </div>
         <div class="col-12">
-          <p>Nos constituímos como una sociedad en 2016 con el propósito de ofrecer servicios </p>
           <p>
-              especializados de
+            Nos constituímos como una sociedad en 2016 con el propósito de
+            ofrecer servicios
+          </p>
+          <p>
+            especializados de
             <b>medios de pago, consultoría y <b>desarrollo de software.</b></b>
           </p>
 
@@ -68,13 +70,16 @@
             Contamos con
             <b>más de 25 años de experiencia laboral,</b> trabajando con
           </p>
-          <p> Bancos, Instituciones Financieras y Fintechs, Nacionales e Internacionales.</p>
           <p>
-            Formamos un equipo <b>multidisciplinario</b> con experiencias en
-            diversos ámbitos tales como 
+            Bancos, Instituciones Financieras y Fintechs, Nacionales e
+            Internacionales.
           </p>
           <p>
-            Medios de pago, TI, Operaciones, Negociación y Relaciones entre 
+            Formamos un equipo <b>multidisciplinario</b> con experiencias en
+            diversos ámbitos tales como
+          </p>
+          <p>
+            Medios de pago, TI, Operaciones, Negociación y Relaciones entre
           </p>
           <p>participantes en el mercado mexicano.</p>
         </div>
@@ -82,14 +87,14 @@
     </div>
     <!--NUESTROS CLIENTES-->
     <div style=" justify-content:center;">
-    <div class="row clientes q-pb-sm" id="#clientes">
-      <div class="col-12 col-md-12">
-        <h4>Nuestros clientes</h4>
+      <div class="row clientes q-pb-sm" id="#clientes">
+        <div class="col-12 col-md-12">
+          <h4>Nuestros clientes</h4>
+        </div>
       </div>
-    </div>
-    <div class="row clientes q-pr-sm" style=" justify-content:center;">
+      <div class="row clientes q-pr-sm" style=" justify-content:center;">
         <div class="col-2 q-ml-xl">
-          <q-img  src="../assets/eglobal.png" alt="" />
+          <q-img src="../assets/eglobal.png" alt="" />
         </div>
         <div class="col-2 q-ml-xl">
           <q-img src="../assets/mastercard.png" alt="" />
@@ -97,9 +102,9 @@
         <div class="col-2 q-ml-xl">
           <q-img src="../assets/prosa.png" alt="" />
         </div>
-    </div>
-    <div class="row clientes q-pr-sm" style=" justify-content:center;">
-      <div class="col-1 q-ml-xl q-mb-xl">
+      </div>
+      <div class="row clientes q-pr-sm" style=" justify-content:center;">
+        <div class="col-1 q-ml-xl q-mb-xl">
           <q-img src="../assets/sodexo.png" alt="" />
         </div>
         <div class="col-2 q-ml-xl q-mb-xl">
@@ -108,8 +113,8 @@
         <div class="col-1 q-ml-xl q-mb-xl">
           <q-img src="../assets/ACI.png" alt="" />
         </div>
+      </div>
     </div>
-</div>
     <!-- AREAS DE EXPERIENCIA-->
     <div class="row gt-sm imgExp" id="experiencia">
       <div class="col-10 col-4-md" style="margin-top: 7%">
@@ -134,7 +139,7 @@
 
     <div class="row lt-md imgExp2" id="experiencia">
       <div class="col-10 col-4-md" style="margin-top: 7%;  margin-left: 7%;">
-        <h3>Áreas de</h3>
+        <h3 style="margin-bottom: -40px;">Áreas de</h3>
         <h3>experiencia</h3>
       </div>
       <div class="col-10 col-4-md" style="margin-top: 6%; margin-left: 7%;">
@@ -142,13 +147,16 @@
       </div>
       <div class="expAreas2 q-mt-md q-mb-xl">
         <ul>
-        <li>Integración a la banca mexicana para emisores <br> / adquirentes</li>
-        <li>Reglamentación local / ABM / Banxico</li>
-        <li>
-          Análisis y construcción de interfaces especialidades en la banca
-        </li>
-        <li>Cuota de intercambio</li>
-        <li>Minería de datos y análisis transaccional</li>
+          <li>
+            Integración a la banca mexicana para emisores <br />
+            / adquirentes
+          </li>
+          <li>Reglamentación local / ABM / Banxico</li>
+          <li>
+            Análisis y construcción de interfaces especialidades en la banca
+          </li>
+          <li>Cuota de intercambio</li>
+          <li>Minería de datos y análisis transaccional</li>
         </ul>
         <br />
         <br />
@@ -161,15 +169,17 @@
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
       <div class="row q-gutter-xl q-mb-xl" style="justify-content:center;">
-          <q-card flat bordered class="column my-card">
-            <q-card-section class="q-ml-md">
-              <div class="text-h2 titulo q-mt-xl">
+        <q-card flat bordered class="column my-card">
+          <q-card-section class="q-ml-md">
+            <div class="titulo q-mt-xl" style="margin-bottom: 40px;">
+              <h2>
                 Diseño de <br />
-                experiencias
-              </div>
-            </q-card-section>
-            <q-card-section class="q-pt-none exp q-ml-md">
-              <div>
+                experiencia
+              </h2>
+            </div>
+          </q-card-section>
+          <q-card-section class="q-pt-none exp q-ml-md">
+            <div style="margin-bottom: -20px;">
               <p>
                 <b>
                   Evaluamos y analizamos las plataformas <br />
@@ -179,70 +189,81 @@
                   la optimización de operaciones.
                 </b>
               </p>
+            </div>
+          </q-card-section>
+          <q-card-section class="q-mb-md">
+            <div class="expLista">
+              <div>
+                <ul>
+                  <li class="q-ml-md">
+                    <strong>Creación de plataformas</strong> amigables, <br />
+                    modernas y disruptivas
+                  </li>
+                  <li class="q-ml-md">
+                    <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
+                    SCRUM, Blue Ocean, Waterfall, UML, y más.
+                  </li>
+                  <li class="q-ml-md">
+                    <strong>Análisis</strong> profundo sobre la competencia. el
+                    <br />
+                    mercado y los usuarios.
+                  </li>
+                  <li class="q-ml-md">
+                    <strong>Establecimiento de directrices</strong> para
+                    interfaces
+                    <br />
+                    gráficas.
+                  </li>
+                </ul>
               </div>
-            </q-card-section>
-            <q-card-section class="q-mb-md">
-              <div class="expLista">
-                <di v>
-                <li class="q-ml-md">
-                  <strong>Creación de plataformas</strong> amigables, <br />
-                  modernas y disruptivas
-                </li>
-                <li class="q-ml-md">
-                  <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
-                  SCRUM, Blue Ocean, Waterfall, UML, y más.
-                </li>
-                <li class="q-ml-md">
-                  <strong>Análisis</strong> profundo sobre la competencia. el
-                  <br />
-                  mercado y los usuarios.
-                </li>
-                <li class="q-ml-md">
-                  <strong>Establecimiento de directrices</strong> para interfaces
-                  <br />
-                  gráficas.
-                </li>
-                </di>
-              </div>
-            </q-card-section>
-          </q-card>
-          <q-card flat bordered  class="column my-card">
+            </div>
+          </q-card-section>
+        </q-card>
+        <q-card flat bordered class="column my-card">
           <q-card-section class="q-ml-md">
-              <div class="text-h2 titulo q-mt-xl">
+            <div class="titulo q-mt-xl" style="margin-bottom: 40px;">
+              <h2>
                 Diseño de <br />
                 interfaces
-              </div>
-            </q-card-section>
-            <q-card-section class="q-pt-none exp q-ml-md">
+              </h2>
+            </div>
+          </q-card-section>
+          <q-card-section class="q-pt-none exp q-ml-md">
+            <div style="margin-bottom: -20px;">
               <p>
                 <b>
-                  Creamos e implementamos pantallas que <br />
+                  Creamos e implementamos ‎‎‎‎‎‎‎‎‎pantallas que <br />
                   reflejan la identidad visual de la marca, las <br />
                   tendencias del mercado y un diseño <br />
                   visualmente atractivo.
                 </b>
               </p>
-            </q-card-section>
-            <q-card-section class="q-mb-md">
-              <div class="expLista q-mt-xl">
-                <li class="q-ml-md">
-                  Análisis y documentación de tendencias<br />
-                  actuales
-                </li>
-                <li class="q-ml-md">
-                  Propuestas responsivas y personalizadas <del></del><br />
-                  retículas
-                </li>
-                <li class="q-ml-md">Prototipos de navegación funcional</li>
-                <li class="q-ml-md">
-                  Integración de pantallas a través de <br />
-                  herramientas como Bootstrap, Semantic UI, y <br />
-                  Materialize
-                </li>
+            </div>
+          </q-card-section>
+          <q-card-section class="q-mb-md">
+            <div class="expLista">
+              <div>
+                <ul>
+                  <li class="q-ml-md">
+                    Análisis y documentación de tendencias<br />
+                    actuales
+                  </li>
+                  <li class="q-ml-md">
+                    Propuestas responsivas y personalizadas <del></del><br />
+                    retículas
+                  </li>
+                  <li class="q-ml-md">Prototipos de navegación funcional</li>
+                  <li class="q-ml-md">
+                    Integración de pantallas a través de <br />
+                    herramientas como Bootstrap, Semantic UI, y <br />
+                    Materialize
+                  </li>
+                </ul>
               </div>
-            </q-card-section>
-          </q-card>
-      </div> 
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
 
     <!--NUESTROS PRODUCTOS-->
@@ -250,7 +271,7 @@
       <h4>Nuestros productos</h4>
     </div>
     <div class="slider q-pt-xl q-pb-xl">
-      <q-responsive :ratio="13/11" style="width: 80%; max-width: 100%;">
+      <q-responsive :ratio="10 / 8" style="width: 90%; max-width: 100%;">
         <q-carousel
           ref="carousel"
           transition-prev="slide-right"
@@ -261,8 +282,6 @@
           infinite
           control-color="black"
           class="shadow-6"
-          style="border-radius:15px"
-            
         >
           <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
           <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
@@ -303,7 +322,7 @@
       <h4>Nuestros servicios</h4>
     </div>
     <div class="row q-pa-xl servicios">
-      <div class="col-12 col-xs-4">
+      <div class="col-12 col-xs-4 gt-sm">
         <template>
           <q-tabs
             v-model="tab"
@@ -333,8 +352,7 @@
             />
           </q-tabs>
         </template>
-
-        <div class="gt-md">
+        <div>
           <template>
             <q-tab-panels
               v-model="tab"
@@ -492,9 +510,39 @@
           </template>
         </div>
       </div>
-
-      <div class="lt-md">
-        <div class="q-mt-xl">
+      <div class="col-12 lt-md">
+        <template>
+          <q-tabs
+            v-model="tab"
+            indicator-color="transparent"
+            vertical
+            style="margin-left: -20%;"
+          >
+            <q-tab
+              class="border-servicios"
+              name="consultoria"
+              label="Consultoría"
+            />
+            <q-tab
+              class="border-servicios"
+              name="desarrollos"
+              label="Desarrollos"
+            />
+            <q-tab
+              class="border-servicios"
+              name="integracion"
+              label="Integración"
+            />
+            <q-tab
+              class="border-servicios"
+              name="backoffice"
+              label="Back Office"
+            />
+          </q-tabs>
+        </template>
+      </div>
+      <div class="col-12 lt-md q-mt-xl">
+        <div style="margin-left: -25%">
           <template>
             <q-tab-panels
               v-model="tab"
@@ -654,22 +702,34 @@
       </div>
     </div>
 
-    <q-page-scroller position="bottom-right" :scroll-offset="500" :offset="[18, 18]" :duration="1000">
-      <q-btn fab icon="keyboard_arrow_up" style="background-color:#ff0063; color: white "></q-btn>
+    <q-page-scroller
+      position="bottom-right"
+      :scroll-offset="500"
+      :offset="[18, 18]"
+      :duration="1000"
+    >
+      <q-btn
+        fab
+        icon="keyboard_arrow_up"
+        style="background-color:#ff0063; color: white "
+      ></q-btn>
     </q-page-scroller>
 
     <!--PRODUCTOS-->
-   <div class="row productos">
-     <h4>Productos que se adaptan a las<br> necesidades de cada usuario</h4>
-   </div>
-    
+    <div class="row productos">
+      <h4>
+        Productos que se adaptan a las<br />
+        necesidades de cada usuario
+      </h4>
+    </div>
+
     <div class="row unete">
       <img src="../assets/UNETE.png" class="col-12" />
     </div>
 
     <!--CONTACTO-->
     <div class="row contacto" id="contacto">
-        <q-img src="../assets/CONTACTO.png" class="col-2" />
+      <q-img src="../assets/CONTACTO.png" class="col-2" />
     </div>
   </div>
 </template>
@@ -682,8 +742,8 @@ export default {
     return {
       slide: 1,
       tab: "consultoria",
-      splitterModel: 20,
+      splitterModel: 20
     };
-  },
+  }
 };
 </script>
