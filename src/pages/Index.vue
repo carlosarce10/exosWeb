@@ -9,6 +9,7 @@
           navigation
           v-model="slide"
           infinite
+          arrows
           transition-prev="slide-right"
           transition-next="slide-left"
         >
