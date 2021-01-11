@@ -8,14 +8,9 @@ body {
   font-weight: bold !important;
 }
 
-.carrusel {
-  height: 65rem;
-}
-
 .nosotros {
-  padding: 60px 0 40px 0;
+  padding: 200px 0 40px 0;
   position: relative;
-
 }
 
 .nosotros p {
@@ -124,6 +119,7 @@ body {
   background-color: #e3e3e3;
   align-items: center;
   padding-left: 10%;
+  padding-right: 10%;
 }
 
 .servicios {
@@ -177,4 +173,9 @@ a {
 }
 .color-servicios {
   background-color: #aaaaaa;
+}
+#imgProductos {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
 }

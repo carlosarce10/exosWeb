@@ -1,7 +1,26 @@
 <template>
   <div>
     <!-- CARRUSEL-->
-    <div>
+    <div class="gt-sm" style="height: 100vh">
+      <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
+        <q-carousel
+          swipeable
+          animated
+          navigation
+          v-model="slide"
+          infinite
+          arrows
+          transition-prev="slide-right"
+          transition-next="slide-left"
+        >
+          <q-carousel-slide :name="1" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="2" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="3" img-src="../assets/banPrin.png" />
+          <q-carousel-slide :name="4" img-src="../assets/banPrin.png" />
+        </q-carousel>
+      </q-responsive>
+    </div>
+    <div class="lt-md">
       <q-responsive :ratio="16 / 9" style="width: 100%; max-width: 100%">
         <q-carousel
           swipeable
@@ -21,7 +40,70 @@
       </q-responsive>
     </div>
     <!--ACERCA DE NOSOTROS-->
-    <div class="nosotros" id="nosotros">
+    <div class="nosotros gt-sm" id="nosotros" style="height: 100vh">
+      <div class="row">
+        <div class="col-12 col-md-4 offset-md-2">
+          <h3>Acerca</h3>
+          <h3>de nosotros</h3>
+        </div>
+        <div class="col-12 col-md-6">
+          <p>Nos constituímos como una sociedad en 2016 con el propósito de</p>
+          <p>
+            ofrecer servicios especializados de
+            <b>medios de pago, consultoría y</b>
+          </p>
+          <p><b>desarrollo de software.</b></p>
+
+          <p>
+            Contamos con
+            <b>más de 25 años de experiencia laboral,</b> trabajando
+          </p>
+          <p>con Bancos, Instituciones Financieras y Fintechs, Nacionales e</p>
+          <p>Internacionales</p>
+
+          <p>
+            Formamos un equipo <b>multidisciplinario</b> con experiencias en
+            diversos
+          </p>
+          <p>
+            ámbitos tales como Medios de pago, TI, Operaciones, Negociación y
+          </p>
+          <p>Relaciones entre participantes en el mercado mexicano</p>
+        </div>
+      </div>
+      <div class="lt-md q-pl-xl">
+        <div class="col-12">
+          <h3 style="margin-bottom: -35px">Acerca</h3>
+          <h3>de nosotros</h3>
+        </div>
+        <div class="col-12">
+          <p>
+            Nos constituímos como una sociedad en 2016 con el propósito de
+            ofrecer servicios
+          </p>
+          <p>
+            especializados de
+            <b>medios de pago, consultoría y <b>desarrollo de software.</b></b>
+          </p>
+
+          <p>
+            Contamos con
+            <b>más de 25 años de experiencia laboral,</b> trabajando con
+          </p>
+          <p>
+            Bancos, Instituciones Financieras y Fintechs, Nacionales e
+            Internacionales.
+          </p>
+          <p>
+            Formamos un equipo <b>multidisciplinario</b> con experiencias en
+            diversos ámbitos tales como
+          </p>
+          <p>Medios de pago, TI, Operaciones, Negociación y Relaciones entre</p>
+          <p>participantes en el mercado mexicano.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nosotros lt-md" id="nosotros" style="padding: 60px 0 40px 0">
       <div class="row gt-sm">
         <div class="col-12 col-md-4 offset-md-2">
           <h3>Acerca</h3>
@@ -52,9 +134,9 @@
           <p>Relaciones entre participantes en el mercado mexicano</p>
         </div>
       </div>
-      <div class="lt-md  q-pl-xl">
+      <div class="lt-md q-pl-xl">
         <div class="col-12">
-          <h3 style="margin-bottom: -35px;">Acerca</h3>
+          <h3 style="margin-bottom: -35px">Acerca</h3>
           <h3>de nosotros</h3>
         </div>
         <div class="col-12">
@@ -79,21 +161,19 @@
             Formamos un equipo <b>multidisciplinario</b> con experiencias en
             diversos ámbitos tales como
           </p>
-          <p>
-            Medios de pago, TI, Operaciones, Negociación y Relaciones entre
-          </p>
+          <p>Medios de pago, TI, Operaciones, Negociación y Relaciones entre</p>
           <p>participantes en el mercado mexicano.</p>
         </div>
       </div>
     </div>
     <!--NUESTROS CLIENTES-->
-    <div style=" justify-content:center;">
-      <div class="row clientes q-pb-sm" id="#clientes">
+    <div style="justify-content: center; height: 100vh" class="clientes gt-sm">
+      <div class="row q-pb-sm" id="#clientes">
         <div class="col-12 col-md-12">
           <h4>Nuestros clientes</h4>
         </div>
       </div>
-      <div class="row clientes q-pr-sm" style=" justify-content:center;">
+      <div class="row clientes q-pr-sm" style="justify-content: center">
         <div class="col-2 q-ml-xl">
           <q-img src="../assets/eglobal.png" alt="" />
         </div>
@@ -104,7 +184,36 @@
           <q-img src="../assets/prosa.png" alt="" />
         </div>
       </div>
-      <div class="row clientes q-pr-sm" style=" justify-content:center;">
+      <div class="row clientes q-pr-sm" style="justify-content: center">
+        <div class="col-1 q-ml-xl q-mb-xl">
+          <q-img src="../assets/sodexo.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl q-mb-xl">
+          <q-img src="../assets/broxel.png" alt="" />
+        </div>
+        <div class="col-1 q-ml-xl q-mb-xl">
+          <q-img src="../assets/ACI.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div style="justify-content: center" class="clientes lt-md">
+      <div class="row q-pb-sm" id="#clientes">
+        <div class="col-12 col-md-12">
+          <h4>Nuestros clientes</h4>
+        </div>
+      </div>
+      <div class="row clientes q-pr-sm" style="justify-content: center">
+        <div class="col-2 q-ml-xl">
+          <q-img src="../assets/eglobal.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl">
+          <q-img src="../assets/mastercard.png" alt="" />
+        </div>
+        <div class="col-2 q-ml-xl">
+          <q-img src="../assets/prosa.png" alt="" />
+        </div>
+      </div>
+      <div class="row clientes q-pr-sm" style="justify-content: center">
         <div class="col-1 q-ml-xl q-mb-xl">
           <q-img src="../assets/sodexo.png" alt="" />
         </div>
@@ -117,8 +226,8 @@
       </div>
     </div>
     <!-- AREAS DE EXPERIENCIA-->
-    <div class="row gt-sm imgExp" id="experiencia">
-      <div class="col-10 col-4-md" style="margin-top: 7%">
+    <div class="row gt-sm imgExp" id="experiencia" style="height: 100vh">
+      <div class="col-10 col-4-md" style="margin-top: 3%">
         <h3>Áreas de</h3>
         <h3>experiencia</h3>
       </div>
@@ -137,13 +246,12 @@
         <br />
       </div>
     </div>
-
     <div class="row lt-md imgExp2" id="experiencia">
-      <div class="col-10 col-4-md" style="margin-top: 7%;  margin-left: 7%;">
-        <h3 style="margin-bottom: -40px;">Áreas de</h3>
+      <div class="col-10 col-4-md" style="margin-top: 7%; margin-left: 7%">
+        <h3 style="margin-bottom: -40px">Áreas de</h3>
         <h3>experiencia</h3>
       </div>
-      <div class="col-10 col-4-md" style="margin-top: 6%; margin-left: 7%;">
+      <div class="col-10 col-4-md" style="margin-top: 6%; margin-left: 7%">
         <h3>Somos expertos</h3>
       </div>
       <div class="expAreas2 q-mt-md q-mb-xl">
@@ -169,10 +277,10 @@
       <div class="col-12 experiencias">
         <h4>Experiencias digitales e interactivas (UX/UI)</h4>
       </div>
-      <div class="row q-gutter-xl q-mb-xl" style="justify-content:center;">
+      <div class="row q-gutter-xl q-mb-xl" style="justify-content: center">
         <q-card flat bordered class="column my-card">
           <q-card-section class="q-ml-md">
-            <div class="titulo q-mt-xl" style="margin-bottom: 40px;">
+            <div class="titulo q-mt-xl" style="margin-bottom: 40px">
               <h2>
                 Diseño de <br />
                 experiencia
@@ -180,7 +288,7 @@
             </div>
           </q-card-section>
           <q-card-section class="q-pt-none exp q-ml-md">
-            <div style="margin-bottom: -20px;">
+            <div style="margin-bottom: -20px">
               <p>
                 <b>
                   Evaluamos y analizamos las plataformas <br />
@@ -222,7 +330,7 @@
         </q-card>
         <q-card flat bordered class="column my-card">
           <q-card-section class="q-ml-md">
-            <div class="titulo q-mt-xl" style="margin-bottom: 40px;">
+            <div class="titulo q-mt-xl" style="margin-bottom: 40px">
               <h2>
                 Diseño de <br />
                 interfaces
@@ -230,7 +338,7 @@
             </div>
           </q-card-section>
           <q-card-section class="q-pt-none exp q-ml-md">
-            <div style="margin-bottom: -20px;">
+            <div style="margin-bottom: -20px">
               <p>
                 <b>
                   Creamos e implementamos ‎‎‎‎‎‎‎‎‎pantallas que <br />
@@ -271,49 +379,64 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class="slider q-pt-xl q-pb-xl">
-      <q-responsive :ratio="10 / 8" style="width: 90%; max-width: 100%;">
+    <div class="gt-sm slider q-pt-xl q-pb-xl" style="height: 100vh">
+      <q-carousel
+        style="height: 100%"
+        ref="carousel"
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        arrows
+        animated
+        swipeable
+        v-model="slide"
+        infinite
+        control-color="black"
+        class="shadow-6"
+      >
+        <q-carousel-slide
+          :name="1"
+          id="imgProductos"
+          img-src="../assets/PREAUTORIZADOR.png"
+        />
+        <q-carousel-slide
+          :name="2"
+          id="imgProductos"
+          img-src="../assets/SISTEMA.png"
+        />
+        <q-carousel-slide
+          :name="3"
+          id="imgProductos"
+          img-src="../assets/HUB.png"
+        />
+        <q-carousel-slide
+          :name="4"
+          id="imgProductos"
+          img-src="../assets/SHIFT.png"
+        />
+        <q-carousel-slide
+          :name="5"
+          id="imgProductos"
+          img-src="../assets/VISION.png"
+        />
+      </q-carousel>
+    </div>
+    <div class="lt-md">
+      <q-responsive :ratio="12 / 9" style="width: 100%; max-width: 100%">
         <q-carousel
-          ref="carousel"
-          transition-prev="slide-right"
-          transition-next="slide-left"
-          animated
           swipeable
+          animated
+          navigation
           v-model="slide"
           infinite
+          transition-prev="slide-right"
+          transition-next="slide-left"
           control-color="black"
-          class="shadow-6"
         >
           <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
           <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
           <q-carousel-slide :name="3" img-src="../assets/HUB.png" />
           <q-carousel-slide :name="4" img-src="../assets/SHIFT.png" />
           <q-carousel-slide :name="5" img-src="../assets/VISION.png" />
-
-          <template v-slot:control>
-            <q-carousel-control
-              position="bottom-right"
-              :offset="[18, 0]"
-              class="q-gutter-md"
-            >
-              <q-btn
-                push
-                round
-                flat
-                text-color="black"
-                icon="arrow_left"
-                @click="$refs.carousel.previous()"
-              />
-              <q-btn
-                push
-                round
-                flat
-                text-color="black"
-                icon="arrow_right"
-                @click="$refs.carousel.next()"
-              />
-            </q-carousel-control>
-          </template>
         </q-carousel>
       </q-responsive>
     </div>
@@ -517,7 +640,7 @@
             v-model="tab"
             indicator-color="transparent"
             vertical
-            style="margin-left: -20%;"
+            style="margin-left: -20%"
           >
             <q-tab
               class="border-servicios"
@@ -712,7 +835,7 @@
       <q-btn
         fab
         icon="keyboard_arrow_up"
-        style="background-color:#ff0063; color: white "
+        style="background-color: #ff0063; color: white"
       ></q-btn>
     </q-page-scroller>
 
@@ -743,8 +866,8 @@ export default {
     return {
       slide: 1,
       tab: "consultoria",
-      splitterModel: 20
+      splitterModel: 20,
     };
-  }
+  },
 };
 </script>
