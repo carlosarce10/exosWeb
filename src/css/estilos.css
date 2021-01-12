@@ -117,6 +117,7 @@ body {
 
 .slider {
   background-color: #e3e3e3;
+  justify-content: center; 
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -173,4 +174,10 @@ a {
 }
 .color-servicios {
   background-color: #aaaaaa;
+}
+
+.carrusel{
+  margin-left: 6%;
+  justify-content: center;
+  align-items: center;
 }

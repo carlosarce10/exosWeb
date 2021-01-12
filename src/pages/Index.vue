@@ -167,13 +167,13 @@
       </div>
     </div>
     <!--NUESTROS CLIENTES-->
-    <div style="justify-content: center; height: 100vh" class="clientes gt-sm">
+    <div style="justify-content: center; height: 100vh" class="clientes gt-sm ">
       <div class="row q-pb-sm" id="#clientes">
-        <div class="col-12 col-md-12">
+        <div class="col-12 col-md-12 q-mt-xl">
           <h4>Nuestros clientes</h4>
         </div>
       </div>
-      <div class="row clientes q-pr-sm" style="justify-content: center">
+      <div class="row clientes q-pr-sm q-mt-xl" style="justify-content: center">
         <div class="col-2 q-ml-xl">
           <q-img src="../assets/eglobal.png" alt="" />
         </div>
@@ -184,7 +184,7 @@
           <q-img src="../assets/prosa.png" alt="" />
         </div>
       </div>
-      <div class="row clientes q-pr-sm" style="justify-content: center">
+      <div class="row clientes q-pr-sm q-mt-xl" style="justify-content: center">
         <div class="col-1 q-ml-xl q-mb-xl">
           <q-img src="../assets/sodexo.png" alt="" />
         </div>
@@ -379,46 +379,28 @@
     <div class="row productos" id="productos">
       <h4>Nuestros productos</h4>
     </div>
-    <div class="gt-sm slider q-pt-xl q-pb-xl" style="height: 100vh">
-      <q-carousel
-        style="height: 100%;"
-        ref="carousel"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        arrows
-        animated
-        swipeable
-        v-model="slide"
-        infinite
-        control-color="black"
-        class="shadow-6"
-      >
-        <q-carousel-slide
-          :name="1"
-          id="imgProductos"
-          img-src="../assets/PREAUTORIZADOR.png"
-        />
-        <q-carousel-slide
-          :name="2"
-          id="imgProductos"
-          img-src="../assets/SISTEMA.png"
-        />
-        <q-carousel-slide
-          :name="3"
-          id="imgProductos"
-          img-src="../assets/HUB.png"
-        />
-        <q-carousel-slide
-          :name="4"
-          id="imgProductos"
-          img-src="../assets/SHIFT.png"
-        />
-        <q-carousel-slide
-          :name="5"
-          id="imgProductos"
-          img-src="../assets/VISION.png"
-        />
-      </q-carousel>
+    <div class="gt-sm slider q-pt-xl q-pb-xl" >
+       <q-responsive :ratio="10 / 8" class="q-ml-xl" style="width: 85%; max-width: 100%;">
+        <q-carousel
+          ref="carousel"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          animated
+          swipeable
+          infinite
+          v-model="slide"
+          infinitea
+          arrows
+          control-color="black"
+          class="shadow-6 carrusel"
+        >
+          <q-carousel-slide :name="1" img-src="../assets/PREAUTORIZADOR.png" />
+          <q-carousel-slide :name="2" img-src="../assets/SISTEMA.png" />
+          <q-carousel-slide :name="3" img-src="../assets/HUB.png" />
+          <q-carousel-slide :name="4" img-src="../assets/SHIFT.png" />
+          <q-carousel-slide :name="5" img-src="../assets/VISION.png" />
+        </q-carousel>
+      </q-responsive>
     </div>
     <div class="lt-md">
       <q-responsive :ratio="15 / 11 " style="width: 100%; max-width: 100%" >
