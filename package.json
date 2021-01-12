@@ -2,7 +2,7 @@
   "name": "pagweb",
   "version": "0.0.1",
   "description": "Soluciones en medios de pago",
-  "productName": "eXos",
+  "productName": "exos",
   "author": "Diego Calderón <diego.calderon@exos.mx>",
   "private": true,
   "scripts": {

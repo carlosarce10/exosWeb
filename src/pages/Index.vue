@@ -304,20 +304,20 @@
             <div class="expLista">
               <div>
                 <ul>
-                  <li class="q-ml-md">
+                  <li >
                     <strong>Creación de plataformas</strong> amigables, <br />
                     modernas y disruptivas
                   </li>
-                  <li class="q-ml-md">
+                  <li >
                     <strong>Empleo de metodologías</strong> AGILE, CANVAS,<br />
                     SCRUM, Blue Ocean, Waterfall, UML, y más.
                   </li>
-                  <li class="q-ml-md">
+                  <li >
                     <strong>Análisis</strong> profundo sobre la competencia. el
                     <br />
                     mercado y los usuarios.
                   </li>
-                  <li class="q-ml-md">
+                  <li >
                     <strong>Establecimiento de directrices</strong> para
                     interfaces
                     <br />
@@ -353,16 +353,16 @@
             <div class="expLista">
               <div>
                 <ul>
-                  <li class="q-ml-md">
+                  <li >
                     Análisis y documentación de tendencias<br />
                     actuales
                   </li>
-                  <li class="q-ml-md">
+                  <li >
                     Propuestas responsivas y personalizadas <del></del><br />
                     retículas
                   </li>
-                  <li class="q-ml-md">Prototipos de navegación funcional</li>
-                  <li class="q-ml-md">
+                  <li>Prototipos de navegación funcional</li>
+                  <li>
                     Integración de pantallas a través de <br />
                     herramientas como Bootstrap, Semantic UI, y <br />
                     Materialize
@@ -381,7 +381,7 @@
     </div>
     <div class="gt-sm slider q-pt-xl q-pb-xl" style="height: 100vh">
       <q-carousel
-        style="height: 100%"
+        style="height: 100%;"
         ref="carousel"
         transition-prev="slide-right"
         transition-next="slide-left"
@@ -421,7 +421,7 @@
       </q-carousel>
     </div>
     <div class="lt-md">
-      <q-responsive :ratio="12 / 9" style="width: 100%; max-width: 100%">
+      <q-responsive :ratio="15 / 11 " style="width: 100%; max-width: 100%" >
         <q-carousel
           swipeable
           animated

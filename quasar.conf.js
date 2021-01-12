@@ -108,8 +108,8 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: `eXos`,
-        short_name: `eXos`,
+        name: `exos`,
+        short_name: `exos`,
         description: `Soluciones en medios de pago`,
         display: 'standalone',
         orientation: 'portrait',
